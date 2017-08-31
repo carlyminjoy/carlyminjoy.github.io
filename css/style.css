@@ -47,7 +47,7 @@ nav {
 
 #about-section {
   background-color: #677077;
-  color: #43e8b3; }
+  color: #e5e5e5; }
 
 #msg {
   padding-bottom: 150px; }
@@ -75,7 +75,7 @@ p.fa {
 div.skills div {
   margin-bottom: 0.5rem; }
   div.skills div h3 {
-    background: #43e8b3;
+    background: #e5e5e5;
     padding: 0.5rem;
     line-height: 2rem; }
 
