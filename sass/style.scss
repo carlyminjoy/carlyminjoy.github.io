@@ -58,6 +58,7 @@ nav {
 
 #about {
   background-color: #fff;
+  justify-content: space-between;
 }
 
 #portfolio {
@@ -119,6 +120,10 @@ p.fa {
   }
 }
 
+.profile {
+  width: 404px;
+}
+
 /* BOOTSTRAP CLASSES  */
 .navbar {
   background-color: $complement;
@@ -141,6 +146,12 @@ p.fa {
 }
 
 /* MEDIA QUERIES  */
+@media (max-width: 991px) {
+  #about {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 767px)
 {
   .sm-ctr {
@@ -157,6 +168,10 @@ p.fa {
   .navbar h1 {
     font-size: 1.5em;
     margin-top: 1rem;
+  }
+
+  .skills div {
+    font-size: 1.5rem;
   }
 
   #main-content {

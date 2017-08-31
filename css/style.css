@@ -37,7 +37,8 @@ nav {
     justify-content: flex-end; }
 
 #about {
-  background-color: #fff; }
+  background-color: #fff;
+  justify-content: space-between; }
 
 #portfolio {
   background-color: #677077;
@@ -85,6 +86,9 @@ p.fa {
       padding: 0.5rem;
       line-height: 2rem; }
 
+.profile {
+  width: 404px; }
+
 /* BOOTSTRAP CLASSES  */
 .navbar {
   background-color: #ff2c70;
@@ -103,6 +107,9 @@ p.fa {
   border-radius: 0; }
 
 /* MEDIA QUERIES  */
+@media (max-width: 991px) {
+  #about {
+    justify-content: center; } }
 @media (max-width: 767px) {
   .sm-ctr {
     text-align: center; }
@@ -115,6 +122,9 @@ p.fa {
   .navbar h1 {
     font-size: 1.5em;
     margin-top: 1rem; }
+
+  .skills div {
+    font-size: 1.5rem; }
 
   #main-content div.row {
     padding-left: 1rem;
