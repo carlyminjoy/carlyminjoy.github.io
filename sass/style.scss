@@ -25,18 +25,24 @@ a:hover {
   color: $background;
 }
 
-img.rounded-circle {
+img {
   filter: grayscale(100%);
   border: 2px solid #6ed3cf;
 }
 
-img {border: 2px solid #6ed3cf;}
 
 /* CUSTOM CLASSES */
 
 #main-content {
   max-width: 1000px;
   background-color: #fff;
+}
+
+nav {
+  justify-content: flex-end;
+  .nav {
+    justify-content: flex-end;
+  }
 }
 
 #about {
@@ -89,8 +95,13 @@ p.fa {
   font-size: 2em;
 }
 
-div .skills {
-  background: $base;
+div.skills div {
+  margin-bottom: 0.5rem;
+  h3 {
+    background: $base;
+    padding: 0.5rem;
+    line-height: 2rem;
+  }
 }
 
 /* BOOTSTRAP CLASSES  */

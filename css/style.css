@@ -16,17 +16,19 @@ a {
 a:hover {
   color: #e62739; }
 
-img.rounded-circle {
-  filter: grayscale(100%);
-  border: 2px solid #6ed3cf; }
-
 img {
+  filter: grayscale(100%);
   border: 2px solid #6ed3cf; }
 
 /* CUSTOM CLASSES */
 #main-content {
   max-width: 1000px;
   background-color: #fff; }
+
+nav {
+  justify-content: flex-end; }
+  nav .nav {
+    justify-content: flex-end; }
 
 #about {
   background-color: #fff; }
@@ -67,8 +69,12 @@ a.fa,
 p.fa {
   font-size: 2em; }
 
-div .skills {
-  background: #e1e8f0; }
+div.skills div {
+  margin-bottom: 0.5rem; }
+  div.skills div h3 {
+    background: #e1e8f0;
+    padding: 0.5rem;
+    line-height: 2rem; }
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
