@@ -1,20 +1,26 @@
 // VARIABLES
-$base: #e1e8f0;
-$background: #e62739;
+$base: #43e8b3;
+$bg: #e5e5e5;
+$lighten: lighten($base, 20);
+// $complement: saturate(adjust-color($base, $hue:180), 40);
+$complement: adjust-color($base, $hue:180);
+$darken: darken($complement, 20);
+
+
 
 /* ELEMENT STYLES */
 body {
-  background-color: $base;
+  background-color: $bg;
 }
 
 button {
   color: $base;
-  background: $background;
+  background: $complement;
 }
 
 button:hover {
   background: $base;
-  color: $background;
+  color: $bg;
 }
 
 a {
@@ -22,12 +28,16 @@ a {
 }
 
 a:hover {
-  color: $background;
+  color: $bg;
 }
 
 img {
   filter: grayscale(100%);
-  border: 2px solid #6ed3cf;
+  border: 2px solid $base;
+}
+
+img {
+  background: $complement;
 }
 
 
@@ -51,7 +61,7 @@ nav {
 
 #portfolio {
   background-color: #677077;
-  color: $base;
+  color: $bg;
   div p {
     margin-top: 1rem;
   }
@@ -71,23 +81,23 @@ nav {
 }
 
 #submit {
-  background-color: #6ed3cf;
+  background-color: $base;
   color: #fff;
   padding: 0.5rem;
 }
 
 #submit:hover {
-  background-color: $background;
+  background-color: $bg;
   color: #fff;
 }
 
 #footer {
   background-color: black;
-  color: $base;
+  color: $bg;
 }
 
 .blue {
-  color: #6ed3cf;
+  color: $base;
 }
 
 a.fa,
@@ -106,7 +116,7 @@ div.skills div {
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
-  background-color: $background;
+  background-color: $complement;
 }
 
 .nav-container {

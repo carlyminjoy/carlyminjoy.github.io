@@ -1,24 +1,27 @@
 /* ELEMENT STYLES */
 body {
-  background-color: #e1e8f0; }
+  background-color: #e5e5e5; }
 
 button {
-  color: #e1e8f0;
-  background: #e62739; }
+  color: #43e8b3;
+  background: #e84378; }
 
 button:hover {
-  background: #e1e8f0;
-  color: #e62739; }
+  background: #43e8b3;
+  color: #e5e5e5; }
 
 a {
   text-decoration: none; }
 
 a:hover {
-  color: #e62739; }
+  color: #e5e5e5; }
 
 img {
   filter: grayscale(100%);
-  border: 2px solid #6ed3cf; }
+  border: 2px solid #43e8b3; }
+
+img {
+  background: #e84378; }
 
 /* CUSTOM CLASSES */
 #main-content {
@@ -35,7 +38,7 @@ nav {
 
 #portfolio {
   background-color: #677077;
-  color: #e1e8f0; }
+  color: #e5e5e5; }
   #portfolio div p {
     margin-top: 1rem; }
 
@@ -44,26 +47,26 @@ nav {
 
 #about-section {
   background-color: #677077;
-  color: #e1e8f0; }
+  color: #43e8b3; }
 
 #msg {
   padding-bottom: 150px; }
 
 #submit {
-  background-color: #6ed3cf;
+  background-color: #43e8b3;
   color: #fff;
   padding: 0.5rem; }
 
 #submit:hover {
-  background-color: #e62739;
+  background-color: #e5e5e5;
   color: #fff; }
 
 #footer {
   background-color: black;
-  color: #e1e8f0; }
+  color: #e5e5e5; }
 
 .blue {
-  color: #6ed3cf; }
+  color: #43e8b3; }
 
 a.fa,
 p.fa {
@@ -72,13 +75,13 @@ p.fa {
 div.skills div {
   margin-bottom: 0.5rem; }
   div.skills div h3 {
-    background: #e1e8f0;
+    background: #43e8b3;
     padding: 0.5rem;
     line-height: 2rem; }
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
-  background-color: #e62739; }
+  background-color: #e84378; }
 
 .nav-container {
   max-width: 1000px; }
