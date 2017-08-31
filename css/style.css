@@ -25,6 +25,11 @@ img {
   background: #ff2c70; }
 
 /* CUSTOM CLASSES */
+div.navbar::after {
+  content: "";
+  display: block;
+  clear: both; }
+
 #main-content {
   max-width: 1000px;
   background-color: #fff; }
@@ -110,13 +115,15 @@ div.skills div {
     padding: 2px; }
 
   .navbar h1 {
-    font-size: 1.25em; }
+    font-size: 1.5em;
+    margin-top: 1rem; }
 
   #main-content div.row {
     padding-left: 1rem;
     padding-right: 1rem; }
     #main-content div.row h1 {
-      padding-top: 1rem; } }
+      padding-top: 2rem;
+      text-align: center; } }
 @media (max-width: 595px) {
   #about-section div {
     margin: 1rem; } }
