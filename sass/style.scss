@@ -75,6 +75,7 @@ nav {
 #about-section {
   background-color: #677077;
   color: $bg;
+  padding: 3rem;
 }
 
 #msg {
@@ -106,12 +107,15 @@ p.fa {
   font-size: 2em;
 }
 
-div.skills div {
-  margin-bottom: 0.5rem;
-  h3 {
-    background: $bg;
-    padding: 0.5rem;
-    line-height: 2rem;
+#main-content div.skills {
+  padding: 0;
+  div {
+    margin-bottom: 0.5rem;
+    h3 {
+      background: $bg;
+      padding: 0.5rem;
+      line-height: 2rem;
+    }
   }
 }
 
@@ -159,6 +163,7 @@ div.skills div {
     div.row {
       padding-left: 1rem;
       padding-right: 1rem;
+      margin-bottom: 0;
       h1 {
         padding-top: 2rem;
         text-align: center;
@@ -169,7 +174,7 @@ div.skills div {
 
 @media (max-width: 595px) {
   #about-section {
-    // padding-bottom: 48px;
+    padding: 2rem;
     div {
       margin: 1rem;
     }

@@ -25,11 +25,6 @@ img {
   background: #ff2c70; }
 
 /* CUSTOM CLASSES */
-div.navbar::after {
-  content: "";
-  display: block;
-  clear: both; }
-
 #main-content {
   max-width: 1000px;
   background-color: #fff; }
@@ -55,7 +50,8 @@ nav {
 
 #about-section {
   background-color: #677077;
-  color: #e5e5e5; }
+  color: #e5e5e5;
+  padding: 3rem; }
 
 #msg {
   padding-bottom: 150px; }
@@ -80,12 +76,14 @@ a.fa,
 p.fa {
   font-size: 2em; }
 
-div.skills div {
-  margin-bottom: 0.5rem; }
-  div.skills div h3 {
-    background: #e5e5e5;
-    padding: 0.5rem;
-    line-height: 2rem; }
+#main-content div.skills {
+  padding: 0; }
+  #main-content div.skills div {
+    margin-bottom: 0.5rem; }
+    #main-content div.skills div h3 {
+      background: #e5e5e5;
+      padding: 0.5rem;
+      line-height: 2rem; }
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
@@ -120,12 +118,15 @@ div.skills div {
 
   #main-content div.row {
     padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    margin-bottom: 0; }
     #main-content div.row h1 {
       padding-top: 2rem;
       text-align: center; } }
 @media (max-width: 595px) {
-  #about-section div {
-    margin: 1rem; } }
+  #about-section {
+    padding: 2rem; }
+    #about-section div {
+      margin: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */
