@@ -1,0 +1,105 @@
+/* ELEMENT STYLES */
+body {
+  background-color: #e1e8f0; }
+
+button {
+  color: #e1e8f0;
+  background: #e62739; }
+
+button:hover {
+  background: #e1e8f0;
+  color: #e62739; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  color: #e62739; }
+
+img.rounded-circle {
+  filter: grayscale(100%);
+  border: 2px solid #6ed3cf; }
+
+img {
+  border: 2px solid #6ed3cf; }
+
+/* CUSTOM CLASSES */
+#main-content {
+  max-width: 1000px;
+  background-color: #fff; }
+
+#about {
+  background-color: #fff; }
+
+#portfolio {
+  background-color: #677077;
+  color: #e1e8f0; }
+
+#contact {
+  background-color: #fff; }
+
+#about-section {
+  background-color: #677077;
+  color: #e1e8f0; }
+
+#msg {
+  padding-bottom: 150px; }
+
+#submit {
+  background-color: #6ed3cf;
+  color: #fff;
+  padding: 0.5rem; }
+
+#submit:hover {
+  background-color: #e62739;
+  color: #fff; }
+
+#footer {
+  background-color: black;
+  color: #e1e8f0; }
+
+.blue {
+  color: #6ed3cf; }
+
+a.fa,
+p.fa {
+  font-size: 2em; }
+
+div .skills {
+  background: #e1e8f0; }
+  div .skills :nth(2) {
+    background: #e62739; }
+
+/* BOOTSTRAP CLASSES  */
+.navbar {
+  background-color: #e62739; }
+
+.nav-container {
+  max-width: 1000px; }
+
+.form-group input {
+  border: none;
+  line-height: 2;
+  font-size: 1.5em; }
+
+.form-group .form-control {
+  border-bottom: 1px solid black;
+  border-radius: 0; }
+
+/* MEDIA QUERIES  */
+@media (max-width: 767px) {
+  .sm-ctr {
+    text-align: center; }
+    .sm-ctr nav {
+      justify-content: center; }
+
+  button.nav-item {
+    padding: 2px; }
+
+  .navbar h1 {
+    font-size: 1.25em; } }
+@media (max-width: 595px) {
+  #about-section {
+    padding-bottom: 48px; } }
+
+/*# sourceMappingURL=style.css.map */
