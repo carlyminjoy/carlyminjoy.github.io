@@ -4,7 +4,7 @@ body {
 
 button {
   color: #43e8b3;
-  background: #e84378; }
+  background: #ff2c70; }
 
 button:hover {
   background: #43e8b3;
@@ -21,7 +21,7 @@ img {
   border: 2px solid #43e8b3; }
 
 img {
-  background: #e84378; }
+  background: #ff2c70; }
 
 /* CUSTOM CLASSES */
 #main-content {
@@ -81,7 +81,7 @@ div.skills div {
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
-  background-color: #e84378; }
+  background-color: #ff2c70; }
 
 .nav-container {
   max-width: 1000px; }

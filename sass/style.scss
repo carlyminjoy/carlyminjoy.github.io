@@ -2,8 +2,7 @@
 $base: #43e8b3;
 $bg: #e5e5e5;
 $lighten: lighten($base, 20);
-// $complement: saturate(adjust-color($base, $hue:180), 40);
-$complement: adjust-color($base, $hue:180);
+$complement: saturate(adjust-color($base, $hue:180), 40);
 $darken: darken($complement, 20);
 
 
