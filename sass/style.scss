@@ -24,6 +24,7 @@ button:hover {
 
 a {
   text-decoration: none;
+  color: $base;
 }
 
 a:hover {
@@ -116,6 +117,7 @@ div.skills div {
 /* BOOTSTRAP CLASSES  */
 .navbar {
   background-color: $complement;
+  clear: both;
 }
 
 .nav-container {
@@ -150,10 +152,17 @@ div.skills div {
   .navbar h1 {
     font-size: 1.25em;
   }
+
+  #main-content div.row h1 {
+    padding-top: 1rem;
+  }
 }
 
 @media (max-width: 595px) {
   #about-section {
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
+    div {
+      margin: 1rem;
+    }
   }
 }

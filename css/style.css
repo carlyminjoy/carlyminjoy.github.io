@@ -11,7 +11,8 @@ button:hover {
   color: #e5e5e5; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #43e8b3; }
 
 a:hover {
   color: #e5e5e5; }
@@ -81,7 +82,8 @@ div.skills div {
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
-  background-color: #ff2c70; }
+  background-color: #ff2c70;
+  clear: both; }
 
 .nav-container {
   max-width: 1000px; }
@@ -106,9 +108,12 @@ div.skills div {
     padding: 2px; }
 
   .navbar h1 {
-    font-size: 1.25em; } }
+    font-size: 1.25em; }
+
+  #main-content div.row h1 {
+    padding-top: 1rem; } }
 @media (max-width: 595px) {
-  #about-section {
-    padding-bottom: 48px; } }
+  #about-section div {
+    margin: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */
