@@ -28,6 +28,8 @@ img {
 #main-content {
   max-width: 1000px;
   background-color: #fff; }
+  #main-content div.row {
+    padding: 3rem; }
 
 nav {
   justify-content: flex-end; }
@@ -110,8 +112,11 @@ div.skills div {
   .navbar h1 {
     font-size: 1.25em; }
 
-  #main-content div.row h1 {
-    padding-top: 1rem; } }
+  #main-content div.row {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    #main-content div.row h1 {
+      padding-top: 1rem; } }
 @media (max-width: 595px) {
   #about-section div {
     margin: 1rem; } }
