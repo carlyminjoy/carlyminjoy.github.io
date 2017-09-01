@@ -150,6 +150,15 @@ p.fa {
   #about {
     justify-content: center;
   }
+  .profile {
+    margin-top: 5rem;
+  }
+  hr {
+    display: none;
+  }
+  .skills {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 767px)
@@ -179,6 +188,7 @@ p.fa {
       padding-left: 1rem;
       padding-right: 1rem;
       margin-bottom: 0;
+      justify-content: space-around;
       h1 {
         padding-top: 2rem;
         text-align: center;
@@ -189,7 +199,7 @@ p.fa {
 
 @media (max-width: 595px) {
   #about-section {
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
     div {
       margin: 1rem;
     }

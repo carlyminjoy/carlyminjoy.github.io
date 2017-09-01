@@ -109,7 +109,16 @@ p.fa {
 /* MEDIA QUERIES  */
 @media (max-width: 991px) {
   #about {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .profile {
+    margin-top: 5rem; }
+
+  hr {
+    display: none; }
+
+  .skills {
+    margin-top: 2rem; } }
 @media (max-width: 767px) {
   .sm-ctr {
     text-align: center; }
@@ -129,13 +138,14 @@ p.fa {
   #main-content div.row {
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    justify-content: space-around; }
     #main-content div.row h1 {
       padding-top: 2rem;
       text-align: center; } }
 @media (max-width: 595px) {
   #about-section {
-    padding: 2rem; }
+    padding: 2rem 0 2rem 0; }
     #about-section div {
       margin: 1rem; } }
 
