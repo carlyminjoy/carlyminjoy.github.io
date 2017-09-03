@@ -34,7 +34,9 @@ img {
   border: 2px solid $base;
 }
 
-img {
+img:hover { opacity: 0.7; }
+
+.thumbnail {
   background: $complement;
 }
 
@@ -151,7 +153,7 @@ p.fa {
     justify-content: center;
   }
   .profile {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   hr {
     display: none;
@@ -194,6 +196,11 @@ p.fa {
         text-align: center;
       }
     }
+  }
+
+  div#bout.row {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
