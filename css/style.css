@@ -50,7 +50,8 @@ nav {
     margin-top: 1rem; }
 
 #contact {
-  background-color: #fff; }
+  background-color: #fff;
+  justify-content: space-between; }
 
 #about-section {
   background-color: #677077;
