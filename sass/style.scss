@@ -61,6 +61,9 @@ nav {
 #about {
   background-color: #fff;
   justify-content: space-between;
+  .about-text {
+    margin-top: 3rem;
+  }
 }
 
 #portfolio {
@@ -152,9 +155,19 @@ p.fa {
 @media (max-width: 991px) {
   #about {
     justify-content: center;
+    margin: 0;
+    padding: 0;
   }
-  .profile {
-    margin-top: 4rem;
+  div.row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  div.profile {
+    margin: 3rem 0 0 0;
+    padding: 0;
+    img {
+    border: none;
+    }
   }
   hr {
     display: none;
@@ -186,22 +199,25 @@ p.fa {
     font-size: 1.5rem;
   }
 
-  #main-content {
+  #main-content.container {
+    padding-left: 0;
+    padding-right: 0;
     div.row {
-      padding-left: 1rem;
-      padding-right: 1rem;
       margin-bottom: 0;
       justify-content: space-around;
       h1 {
-        padding-top: 2rem;
         text-align: center;
       }
     }
   }
 
-  div#bout.row {
+  div#about.row {
     padding-left: 0;
     padding-right: 0;
+    div.about-text {
+      padding: 3rem;
+      margin-top: 0;
+    }
   }
 }
 
