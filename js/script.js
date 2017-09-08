@@ -11,7 +11,7 @@ $(document).ready {
       $.ajax {
         method: 'POST',
         url: '//formspree.io/carlylminjoy@gmail.com',
-        data: $('#contact-form').serialize(),
+        data: $(this).serialize(),
         datatype: 'json'
       }
       e.preventDefault();
