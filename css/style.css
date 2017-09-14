@@ -1,10 +1,17 @@
 /* ELEMENT STYLES */
 body {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  font-size: 1em; }
+  body p {
+    line-height: 2em; }
+
+h1 {
+  font-family: monospace; }
 
 button {
   color: #43e8b3;
-  background: #ff2c70; }
+  background: #ff2c70;
+  font-family: monospace; }
 
 button:hover {
   background: #43e8b3;
@@ -28,8 +35,20 @@ img:hover {
   background: #ff2c70; }
 
 /* CUSTOM CLASSES */
+#about-header {
+  padding-top: 4.5rem; }
+
+#main-content div.skills div .green:hover {
+  background: #43e8b3; }
+#main-content div.skills div .yellow:hover {
+  background: #9ef3d8; }
+#main-content div.skills div .orange:hover {
+  background: #ff2c70; }
+#main-content div.skills div .red:hover {
+  background: #c5003f; }
+
 #main-content {
-  max-width: 1000px;
+  max-width: 80%;
   background-color: #fff; }
   #main-content div.row {
     padding: 3rem; }
@@ -77,14 +96,19 @@ nav {
   color: #e5e5e5; }
 
 .blue {
-  color: #43e8b3; }
+  color: #43e8b3;
+  font-family: monospace; }
 
 a.fa,
 p.fa {
   font-size: 2em; }
 
+h3 {
+  font-size: 1.25em; }
+
 #main-content div.skills {
-  padding: 0; }
+  padding: 0;
+  font-family: monospace; }
   #main-content div.skills div {
     margin-bottom: 0.5rem; }
     #main-content div.skills div h3 {
@@ -101,12 +125,13 @@ p.fa {
   clear: both; }
 
 .nav-container {
-  max-width: 1000px; }
+  max-width: 1000px;
+  font-family: monospace; }
 
 .form-group input {
   border: none;
   line-height: 2;
-  font-size: 1.5em; }
+  font-size: 1.25em; }
 
 .form-group .form-control {
   border-bottom: 1px solid black;
@@ -114,10 +139,17 @@ p.fa {
 
 /* MEDIA QUERIES  */
 @media (max-width: 991px) {
+  #main-content {
+    max-width: 100%; }
+
   #about {
     justify-content: center;
     margin: 0;
     padding: 0; }
+    #about #about-header {
+      padding-bottom: 3rem; }
+    #about h1 {
+      padding-top: 2.5rem; }
 
   div.row {
     padding-left: 0;
@@ -135,6 +167,9 @@ p.fa {
   .skills {
     margin-top: 2rem; } }
 @media (max-width: 767px) {
+  div.navbar.fixed-top {
+    padding: 0; }
+
   .sm-ctr {
     text-align: center; }
     .sm-ctr nav {
@@ -148,7 +183,7 @@ p.fa {
     margin-top: 1rem; }
 
   .skills div {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
 
   #main-content.container {
     padding-left: 0;
@@ -157,7 +192,8 @@ p.fa {
       margin-bottom: 0;
       justify-content: space-around; }
       #main-content.container div.row h1 {
-        text-align: center; }
+        text-align: center;
+        margin-top: 1.5rem; }
 
   div#about.row {
     padding-left: 0;
