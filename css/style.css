@@ -69,14 +69,14 @@ nav {
   color: #e5e5e5; }
   #portfolio div p {
     margin-top: 1rem; }
-  #portfolio h1 {
-    margin: 3rem auto; }
 
 #contact {
   background-color: #fff;
   justify-content: space-between; }
-  #contact h1 {
-    margin: 3rem auto; }
+
+#portfolio h1, #contact h1, #about h1 {
+  padding: 2rem 0;
+  line-height: 2rem; }
 
 #about-section {
   background-color: #677077;
@@ -191,7 +191,9 @@ h3 {
       justify-content: space-around; }
       #main-content.container div.row h1 {
         text-align: center;
-        margin-top: 0; }
+        margin-top: 0;
+        padding: 1.25rem 0;
+        line-height: 1.25rem; }
 
   div#about.row {
     padding-left: 0;
