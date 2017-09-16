@@ -102,13 +102,18 @@ nav {
   div p {
     margin-top: 1rem;
   }
-  h1 { margin: 3rem auto; }
 }
 
 #contact {
   background-color: #fff;
   justify-content: space-between;
-  h1 { margin: 3rem auto; }
+}
+
+#portfolio, #contact, #about {
+  h1 {
+    padding: 2rem 0;
+    line-height: 2rem;
+  }
 }
 
 #about-section {
