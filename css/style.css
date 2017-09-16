@@ -36,7 +36,7 @@ img:hover {
 
 /* CUSTOM CLASSES */
 #about-header {
-  padding-top: 4.5rem; }
+  padding-top: 2.5rem; }
 
 #main-content div.skills div .green:hover {
   background: #43e8b3; }
@@ -51,7 +51,7 @@ img:hover {
   max-width: 80%;
   background-color: #fff; }
   #main-content div.row {
-    padding: 3rem; }
+    padding: 1.5rem 3rem; }
 
 nav {
   justify-content: flex-end; }
@@ -69,10 +69,14 @@ nav {
   color: #e5e5e5; }
   #portfolio div p {
     margin-top: 1rem; }
+  #portfolio h1 {
+    margin: 3rem auto; }
 
 #contact {
   background-color: #fff;
   justify-content: space-between; }
+  #contact h1 {
+    margin: 3rem auto; }
 
 #about-section {
   background-color: #677077;
@@ -141,19 +145,13 @@ h3 {
 @media (max-width: 991px) {
   #main-content {
     max-width: 100%; }
+    #main-content div.row {
+      padding: 1.5rem 1rem; }
 
   #about {
     justify-content: center;
     margin: 0;
     padding: 0; }
-    #about #about-header {
-      padding-bottom: 3rem; }
-    #about h1 {
-      padding-top: 2.5rem; }
-
-  div.row {
-    padding-left: 0;
-    padding-right: 0; }
 
   div.profile {
     margin: 3rem 0 0 0;
@@ -193,17 +191,16 @@ h3 {
       justify-content: space-around; }
       #main-content.container div.row h1 {
         text-align: center;
-        margin-top: 1.5rem; }
+        margin-top: 0; }
 
   div#about.row {
     padding-left: 0;
     padding-right: 0; }
     div#about.row div.about-text {
-      padding: 3rem;
       margin-top: 0; } }
 @media (max-width: 595px) {
   #about-section {
-    padding: 2rem 0 2rem 0; }
+    padding: 2rem 0; }
     #about-section div {
       margin: 1rem; } }
 
