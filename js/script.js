@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    $('form').submit(function(e) {
-        var name    = $('inputName');
-        var email   = $('inputEmail');
-        var message = $('inputMessage');
+    $('#contact-form').submit(function(e) {
+        var name    = $('.inputName');
+        var email   = $('.inputEmail');
+        var message = $('.inputMessage');
 
         if (!name.value || !email.value || !message.value) {
             alertify.error('Please check your entries.');
