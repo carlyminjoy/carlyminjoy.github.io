@@ -4,7 +4,7 @@ $(document).ready(function () {
         e.preventDefault();
         $.ajax({
             method: 'POST',
-            url: '//formspree.io/carlylminjoy@gmail.com',
+            url: 'https://formspree.io/carlylminjoy@gmail.com',
             data: $(this).serialize(),
             datatype: 'json'
         });
