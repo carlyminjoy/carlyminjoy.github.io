@@ -4,11 +4,16 @@ $(document).ready(function () {
         e.preventDefault();
         $.ajax({
             method: 'POST',
-            url: 'https://formspree.io/carlylminjoy@gmail.com',
+            url: '//formspree.io/carlylminjoy@gmail.com',
             data: $(this).serialize(),
-            datatype: 'json'
+            dataType: 'json'
+            success: function(data) {
+    			alertify.success('Message sent!');
+		    },
+            error: function(err) {
+    			alertify.error('Could not send.');
+		    }
         });
-        alertify.success('Message sent!');
         $(this).get(0).reset();
     });
 
