@@ -11,7 +11,7 @@ $(document).ready(function () {
     			alertify.success('Message sent!');
 		    },
             error: function(err) {
-    			alertify.error('Could not send.');
+    			alertify.error('Please enter your name, email and message.');
 		    }
         });
         $(this).get(0).reset();
