@@ -6,7 +6,7 @@ $(document).ready(function () {
             method: 'POST',
             url: '//formspree.io/carlylminjoy@gmail.com',
             data: $(this).serialize(),
-            dataType: 'json'
+            dataType: 'json',
             success: function(data) {
     			alertify.success('Message sent!');
 		    },
