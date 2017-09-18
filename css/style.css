@@ -86,12 +86,12 @@ nav {
 #msg {
   padding-bottom: 150px; }
 
-#submit {
+.submit {
   background-color: #43e8b3;
   color: #fff;
   padding: 0.5rem; }
 
-#submit:hover {
+.submit:hover {
   background-color: #e5e5e5;
   color: #fff; }
 
