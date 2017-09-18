@@ -20,7 +20,6 @@ $(document).ready(function () {
     $('.nav-btn').click(function(evt) {
         var navHeight = $(".navbar").height();
         evt.preventDefault();
-        console.log('clicked!');
         $('html, body').stop().animate({
             scrollTop: $( $(this).attr('href') ).offset().top - navHeight
         }, 1000);
