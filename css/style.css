@@ -75,8 +75,10 @@ nav {
   justify-content: space-between; }
 
 #portfolio h1, #contact h1, #about h1 {
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   line-height: 2rem; }
+#portfolio p, #contact p, #about p {
+  margin-bottom: 2rem; }
 
 #about-section {
   background-color: #677077;
@@ -121,7 +123,11 @@ h3 {
       line-height: 2rem; }
 
 .profile {
-  width: 404px; }
+  width: 400px;
+  padding: 2rem;
+  margin-top: 3rem; }
+  .profile img.profile-pic {
+    border: none; }
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
@@ -154,10 +160,8 @@ h3 {
     padding: 0; }
 
   div.profile {
-    margin: 3rem 0 0 0;
+    margin: 5rem 0 0 0;
     padding: 0; }
-    div.profile img {
-      border: none; }
 
   hr {
     display: none; }
