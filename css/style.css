@@ -51,7 +51,7 @@ img:hover {
   max-width: 80%;
   background-color: #fff; }
   #main-content div.row {
-    padding: 1.5rem 3rem; }
+    padding: 1.5rem 3rem 2.5rem 3rem; }
 
 nav {
   justify-content: flex-end; }
@@ -75,10 +75,15 @@ nav {
   justify-content: space-between; }
 
 #portfolio h1, #contact h1, #about h1 {
-  padding: 2rem 0 0 0;
   line-height: 2rem; }
 #portfolio p, #contact p, #about p {
-  margin-bottom: 2rem; }
+  margin-bottom: 2.5rem; }
+
+#contact h1, #about h1 {
+  padding: 2rem 0; }
+
+#portfolio h1 {
+  padding: 2rem 0 0 0; }
 
 #about-section {
   background-color: #677077;
