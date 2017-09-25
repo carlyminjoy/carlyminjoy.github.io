@@ -7,8 +7,9 @@ $darken: darken($complement, 20);
 
 /* ELEMENT STYLES */
 body {
+  font-family: monospace;
   background-color: $bg;
-  font-size: 1em;
+  font-size: 1.125em;
   p {
     line-height: 2em;
   }
@@ -45,12 +46,17 @@ img {
 
 img:hover { opacity: 0.7; }
 
+button, input, optgroup, select, textarea {
+    font-family: monospace;
+}
+
+/* CUSTOM CLASSES */
+
 .thumbnail {
   background: $complement;
 }
 
 
-/* CUSTOM CLASSES */
 #about-header {
   padding-top: 2.5rem;
 }

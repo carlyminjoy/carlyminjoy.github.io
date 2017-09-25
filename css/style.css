@@ -1,7 +1,8 @@
 /* ELEMENT STYLES */
 body {
+  font-family: monospace;
   background-color: #e5e5e5;
-  font-size: 1em; }
+  font-size: 1.125em; }
   body p {
     line-height: 2em; }
 
@@ -31,10 +32,13 @@ img {
 img:hover {
   opacity: 0.7; }
 
+button, input, optgroup, select, textarea {
+  font-family: monospace; }
+
+/* CUSTOM CLASSES */
 .thumbnail {
   background: #ff2c70; }
 
-/* CUSTOM CLASSES */
 #about-header {
   padding-top: 2.5rem; }
 
