@@ -36,6 +36,15 @@ button, input, optgroup, select, textarea {
   font-family: monospace; }
 
 /* CUSTOM CLASSES */
+span.flash {
+  color: #fff;
+  width: 1rem;
+  height: 1rem; }
+
+.background-black {
+  background: #000;
+  color: #000 !important; }
+
 .thumbnail {
   background: #ff2c70; }
 
