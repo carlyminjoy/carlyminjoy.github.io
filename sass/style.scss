@@ -50,6 +50,11 @@ button, input, optgroup, select, textarea {
     font-family: monospace;
 }
 
+.btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 /* CUSTOM CLASSES */
 
 span.flash {
