@@ -10,49 +10,32 @@ body {
   font-family: monospace;
   background-color: $bg;
   font-size: 1.125em;
-  p {
-    line-height: 2em;
+  p { line-height: 2em; }
+  h1 { font-family: monospace; }
+  a {
+    text-decoration: none;
+    color: $base;
   }
-}
-
-h1 {
-  font-family: monospace;
-}
-
-button {
-  color: $base;
-  background: $complement;
-  font-family: monospace;
-}
-
-button:hover {
-  background: $base;
-  color: $bg;
-}
-
-a {
-  text-decoration: none;
-  color: $base;
-}
-
-a:hover {
-  color: $bg;
-}
-
-img {
-  filter: grayscale(100%);
-  border: 2px solid $base;
-}
-
-img:hover { opacity: 0.7; }
-
-button, input, optgroup, select, textarea {
+  a:hover { color: $bg; }
+  button {
+    color: $base;
+    background: $complement;
     font-family: monospace;
-}
-
-.btn:focus {
+  }
+  button:hover {
+    background: $base;
+    color: $bg;
+  }
+  .btn:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
+  }
+  img {
+    filter: grayscale(100%);
+    border: 2px solid $base;
+  }
+  img:hover { opacity: 0.7; }
+  button, input, optgroup, select, textarea { font-family: monospace; }
 }
 
 /* CUSTOM CLASSES */
@@ -64,70 +47,41 @@ span.flash {
 }
 
 .background-black {
-    background: #000;
-    color: #000 !important;
+  background: #000;
+  color: #000 !important;
 }
 
-.thumbnail {
-  background: $complement;
-}
+.thumbnail { background: $complement; }
 
-
-#about-header {
-  padding-top: 2.5rem;
-  div p {
-    // background: #000;
-    // color: #fff;
-  }
-}
-
-#main-content div.skills div {
-  .green:hover {
-    background: $base;
-  }
-
-  .yellow:hover {
-    background: $lighten;
-  }
-
-  .orange:hover {
-    background: $complement;
-  }
-
-  .red:hover {
-    background: $darken;
-  }
-}
+#about-header { padding-top: 2.5rem; }
 
 #main-content {
   max-width: 80%;
   background-color: #fff;
-  div.row {
-    padding: 1.5rem 3rem 2.5rem 3rem;
+  div.row { padding: 1.5rem 3rem 2.5rem 3rem; }
+  div.skills div {
+    .green:hover { background: $base; }
+    .yellow:hover { background: $lighten; }
+    .orange:hover { background: $complement; }
+    .red:hover { background: $darken; }
   }
 }
 
 nav {
   justify-content: flex-end;
-  .nav {
-    justify-content: flex-end;
-  }
+  .nav { justify-content: flex-end; }
 }
 
 #about {
   background-color: #fff;
   justify-content: space-between;
-  .about-text {
-    margin-top: 3rem;
-  }
+  .about-text { margin-top: 3rem; }
 }
 
 #portfolio {
   background-color: #677077;
   color: $bg;
-  div p {
-    margin-top: 1rem;
-  }
+  div p { margin-top: 1rem; }
 }
 
 #contact {
@@ -136,24 +90,16 @@ nav {
 }
 
 #portfolio, #contact, #about {
-  h1 {
-    line-height: 2rem;
-  }
-  p {
-    margin-bottom: 2.5rem;
-  }
+  h1 { line-height: 2rem; }
+  p { margin-bottom: 2.5rem; }
 }
 
 #contact, #about {
-  h1 {
-    padding: 2rem 0;
-  }
+  h1 { padding: 2rem 0; }
 }
 
 #portfolio {
-    h1 {
-        padding: 2rem 0 0 0;
-    }
+  h1 { padding: 2rem 0 0 0; }
 }
 
 #about-section {
@@ -188,9 +134,7 @@ nav {
 }
 
 a.fa,
-p.fa {
-  font-size: 2em;
-}
+p.fa { font-size: 2em; }
 
 h3 { font-size: 1.25em; }
 
@@ -211,13 +155,7 @@ h3 { font-size: 1.25em; }
   width: 400px;
   padding: 2rem;
   margin-top: 3rem;
-  img.profile-pic {
-    border: none;
-    // -moz-transform: scale(-1, 1);
-    // -o-transform: scale(-1, 1);
-    // -webkit-transform: scale(-1, 1);
-    // transform: scale(-1, 1);
-  }
+  img.profile-pic { border: none; }
 }
 
 /* BOOTSTRAP CLASSES  */
@@ -259,37 +197,23 @@ h3 { font-size: 1.25em; }
     margin: 5rem 0 0 0;
     padding: 0;
   }
-  hr {
-    display: none;
-  }
-  .skills {
-    margin-top: 2rem;
-  }
+  hr { display: none; }
+  .skills { margin-top: 2rem; }
 }
 
-@media (max-width: 767px)
-{
-  div.navbar.fixed-top {padding: 0;}
+@media (max-width: 767px) {
+  #contact p { text-align: center; }
+  div.navbar.fixed-top { padding: 0; }
   .sm-ctr {
     text-align: center;
-    nav {
-      justify-content: center;
-    }
+    nav { justify-content: center; }
   }
-
-  button.nav-item {
-    padding: 2px;
-  }
-
+  button.nav-item { padding: 2px; }
   .navbar h1 {
     font-size: 1.5em;
     margin-top: 1rem;
   }
-
-  .skills div {
-    font-size: 1.25rem;
-  }
-
+  .skills div { font-size: 1.25rem; }
   #main-content.container {
     padding-left: 0;
     padding-right: 0;
@@ -304,21 +228,16 @@ h3 { font-size: 1.25em; }
       }
     }
   }
-
   div#about.row {
     padding-left: 0;
     padding-right: 0;
-    div.about-text {
-      margin-top: 0;
-    }
+    div.about-text { margin-top: 0; }
   }
 }
 
 @media (max-width: 595px) {
   #about-section {
     padding: 2rem 0;
-    div {
-      margin: 1rem;
-    }
+    div {  margin: 1rem; }
   }
 }

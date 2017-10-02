@@ -5,39 +5,30 @@ body {
   font-size: 1.125em; }
   body p {
     line-height: 2em; }
-
-h1 {
-  font-family: monospace; }
-
-button {
-  color: #43e8b3;
-  background: #ff2c70;
-  font-family: monospace; }
-
-button:hover {
-  background: #43e8b3;
-  color: #e5e5e5; }
-
-a {
-  text-decoration: none;
-  color: #43e8b3; }
-
-a:hover {
-  color: #e5e5e5; }
-
-img {
-  filter: grayscale(100%);
-  border: 2px solid #43e8b3; }
-
-img:hover {
-  opacity: 0.7; }
-
-button, input, optgroup, select, textarea {
-  font-family: monospace; }
-
-.btn:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+  body h1 {
+    font-family: monospace; }
+  body a {
+    text-decoration: none;
+    color: #43e8b3; }
+  body a:hover {
+    color: #e5e5e5; }
+  body button {
+    color: #43e8b3;
+    background: #ff2c70;
+    font-family: monospace; }
+  body button:hover {
+    background: #43e8b3;
+    color: #e5e5e5; }
+  body .btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  body img {
+    filter: grayscale(100%);
+    border: 2px solid #43e8b3; }
+  body img:hover {
+    opacity: 0.7; }
+  body button, body input, body optgroup, body select, body textarea {
+    font-family: monospace; }
 
 /* CUSTOM CLASSES */
 span.flash {
@@ -55,20 +46,19 @@ span.flash {
 #about-header {
   padding-top: 2.5rem; }
 
-#main-content div.skills div .green:hover {
-  background: #43e8b3; }
-#main-content div.skills div .yellow:hover {
-  background: #9ef3d8; }
-#main-content div.skills div .orange:hover {
-  background: #ff2c70; }
-#main-content div.skills div .red:hover {
-  background: #c5003f; }
-
 #main-content {
   max-width: 80%;
   background-color: #fff; }
   #main-content div.row {
     padding: 1.5rem 3rem 2.5rem 3rem; }
+  #main-content div.skills div .green:hover {
+    background: #43e8b3; }
+  #main-content div.skills div .yellow:hover {
+    background: #9ef3d8; }
+  #main-content div.skills div .orange:hover {
+    background: #ff2c70; }
+  #main-content div.skills div .red:hover {
+    background: #c5003f; }
 
 nav {
   justify-content: flex-end; }
@@ -191,6 +181,9 @@ h3 {
   .skills {
     margin-top: 2rem; } }
 @media (max-width: 767px) {
+  #contact p {
+    text-align: center; }
+
   div.navbar.fixed-top {
     padding: 0; }
 
