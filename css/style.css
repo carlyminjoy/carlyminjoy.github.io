@@ -30,6 +30,9 @@ body {
   body img:hover {
     transform: scale(1.05);
     opacity: 0.7; }
+  body i {
+    color: #43e8b3;
+    margin-left: 0.5rem; }
   body button, body input, body optgroup, body select, body textarea {
     font-family: monospace; }
 
@@ -82,9 +85,6 @@ span.flash {
     align-items: center;
     transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
     -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
-    #main-content div.skills div h3.skill i {
-      color: #43e8b3;
-      margin-left: 0.5rem; }
 
 nav {
   justify-content: flex-end; }
@@ -107,9 +107,9 @@ nav {
   background-color: #fff;
   justify-content: space-between; }
 
-#portfolio h1, #contact h1, #about h1 {
+#contact h1, #about h1 {
   line-height: 2rem; }
-#portfolio p, #contact p, #about p {
+#contact p, #about p {
   margin-bottom: 2.5rem; }
 
 #contact h1, #about h1 {
@@ -118,10 +118,13 @@ nav {
 #portfolio h1 {
   padding: 2rem 0 0 0; }
 
-#about-section {
-  background-color: #677077;
-  color: #e5e5e5;
-  padding: 3rem; }
+.footer-container {
+  background: #677077; }
+  .footer-container #about-section {
+    max-width: 80%;
+    margin: 0 auto;
+    color: #e5e5e5;
+    padding: 3rem; }
 
 #msg {
   padding-bottom: 150px; }
@@ -169,7 +172,7 @@ h3 {
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
-  background-color: #ff2c70;
+  background: #ff2c70;
   clear: both; }
 
 .nav-container {
@@ -207,7 +210,10 @@ h3 {
     display: none; }
 
   .skills {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+
+  .footer-container #about-section {
+    max-width: 100%; } }
 @media (max-width: 767px) {
   #contact p {
     text-align: center; }
