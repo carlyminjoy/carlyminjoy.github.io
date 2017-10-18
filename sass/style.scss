@@ -1,9 +1,27 @@
-// VARIABLES
+// Color pallette
 $base: #43e8b3;
 $bg: #e5e5e5;
 $lighten: lighten($base, 20);
 $complement: saturate(adjust-color($base, $hue:180), 40);
 $darken: darken($complement, 20);
+
+//skills
+$confident:   100%;
+$proficient:  80%;
+$comfortable: 60%;
+$familiar:    40%;
+$dabbled:     30%;
+$heardofit:   20%;
+
+$html:    $proficient;
+$css:     $proficient;
+$bs:      $comfortable;
+$sass:    $comfortable;
+$js:      $proficient;
+$jquery:  $familiar;
+$php:     $dabbled;
+$ruby:    $proficient;
+$git:     $proficient;
 
 /* ELEMENT STYLES */
 body {
@@ -32,9 +50,14 @@ body {
   }
   img {
     filter: grayscale(100%);
-    border: 2px solid $base;
+    opacity: 1;
+    transition: all 1s ease;
+    -webkit-transition: all 1 ease;
   }
-  img:hover { opacity: 0.7; }
+  img:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
   button, input, optgroup, select, textarea { font-family: monospace; }
 }
 
@@ -51,7 +74,9 @@ span.flash {
   color: #000 !important;
 }
 
-.thumbnail { background: $complement; }
+.thumbnail {
+  background-color: $complement;
+}
 
 #about-header { padding-top: 2.5rem; }
 
@@ -60,10 +85,31 @@ span.flash {
   background-color: #fff;
   div.row { padding: 1.5rem 3rem 2.5rem 3rem; }
   div.skills div {
-    .green:hover { background: $base; }
-    .yellow:hover { background: $lighten; }
-    .orange:hover { background: $complement; }
-    .red:hover { background: $darken; }
+    .skill:hover {
+      background-color: $complement;
+      color: #fff;
+    }
+    .skill-html:hover   { width: $html; }
+    .skill-css:hover    { width: $css; }
+    .skill-bs:hover     { width: $bs; }
+    .skill-sass:hover   { width: $sass; }
+    .skill-js:hover     { width: $js; }
+    .skill-jquery:hover { width: $jquery; }
+    .skill-php:hover    { width: $php; }
+    .skill-ruby:hover   { width: $ruby; }
+    .skill-git:hover    { width: $git; }
+    h3.skill {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+      -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+      i {
+        color: $base;
+        margin-left: 0.5rem;
+      }
+    }
   }
 }
 
@@ -192,6 +238,9 @@ h3 { font-size: 1.25em; }
     justify-content: center;
     margin: 0;
     padding: 0;
+    div div {
+      .skill-level-text { display: none; }
+    }
   }
   div.profile {
     margin: 5rem 0 0 0;

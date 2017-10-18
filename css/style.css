@@ -24,8 +24,11 @@ body {
     box-shadow: none; }
   body img {
     filter: grayscale(100%);
-    border: 2px solid #43e8b3; }
+    opacity: 1;
+    transition: all 1s ease;
+    -webkit-transition: all 1 ease; }
   body img:hover {
+    transform: scale(1.05);
     opacity: 0.7; }
   body button, body input, body optgroup, body select, body textarea {
     font-family: monospace; }
@@ -41,7 +44,7 @@ span.flash {
   color: #000 !important; }
 
 .thumbnail {
-  background: #ff2c70; }
+  background-color: #ff2c70; }
 
 #about-header {
   padding-top: 2.5rem; }
@@ -51,14 +54,37 @@ span.flash {
   background-color: #fff; }
   #main-content div.row {
     padding: 1.5rem 3rem 2.5rem 3rem; }
-  #main-content div.skills div .green:hover {
-    background: #43e8b3; }
-  #main-content div.skills div .yellow:hover {
-    background: #9ef3d8; }
-  #main-content div.skills div .orange:hover {
-    background: #ff2c70; }
-  #main-content div.skills div .red:hover {
-    background: #c5003f; }
+  #main-content div.skills div .skill:hover {
+    background-color: #ff2c70;
+    color: #fff; }
+  #main-content div.skills div .skill-html:hover {
+    width: 80%; }
+  #main-content div.skills div .skill-css:hover {
+    width: 80%; }
+  #main-content div.skills div .skill-bs:hover {
+    width: 60%; }
+  #main-content div.skills div .skill-sass:hover {
+    width: 60%; }
+  #main-content div.skills div .skill-js:hover {
+    width: 80%; }
+  #main-content div.skills div .skill-jquery:hover {
+    width: 40%; }
+  #main-content div.skills div .skill-php:hover {
+    width: 30%; }
+  #main-content div.skills div .skill-ruby:hover {
+    width: 80%; }
+  #main-content div.skills div .skill-git:hover {
+    width: 80%; }
+  #main-content div.skills div h3.skill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+    -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
+    #main-content div.skills div h3.skill i {
+      color: #43e8b3;
+      margin-left: 0.5rem; }
 
 nav {
   justify-content: flex-end; }
@@ -170,6 +196,8 @@ h3 {
     justify-content: center;
     margin: 0;
     padding: 0; }
+    #about div div .skill-level-text {
+      display: none; }
 
   div.profile {
     margin: 5rem 0 0 0;
