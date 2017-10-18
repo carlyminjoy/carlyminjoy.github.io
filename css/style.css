@@ -78,6 +78,12 @@ span.flash {
     width: 90%; }
   #main-content div.skills div .skill-git:hover {
     width: 80%; }
+  #main-content div.skills div .skill-python:hover {
+    width: 40%; }
+  #main-content div.skills div .skill-java:hover {
+    width: 30%; }
+  #main-content div.skills div .skill-vscode:hover {
+    width: 60%; }
   #main-content div.skills div h3.skill {
     width: 100%;
     display: flex;

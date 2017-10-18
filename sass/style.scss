@@ -26,6 +26,9 @@ $jquery:  $workinglevel;
 $php:     $familiar;
 $ruby:    $proficient;
 $git:     $confident;
+$python:  $morefamiliar;
+$java:    $familiar;
+$vscode:  $comfortable;
 
 /* ELEMENT STYLES */
 body {
@@ -106,6 +109,9 @@ span.flash {
     .skill-php:hover    { width: $php; }
     .skill-ruby:hover   { width: $ruby; }
     .skill-git:hover    { width: $git; }
+    .skill-python:hover { width: $python; }
+    .skill-java:hover   { width: $java; }
+    .skill-vscode:hover { width: $vscode; }
     h3.skill {
       width: 100%;
       display: flex;
