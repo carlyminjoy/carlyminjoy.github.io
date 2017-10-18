@@ -1,47 +1,60 @@
-// Color pallette
-$base: #43e8b3;
-$bg: #e5e5e5;
-$lighten: lighten($base, 20);
-$complement: saturate(adjust-color($base, $hue:180), 40);
-$darken: darken($complement, 20);
+// Color palette
+$base: #43e8b3; // blue
+$bg: #e5e5e5; // grey
+$lighten: lighten($base, 20); //lighter blue
+$complement: saturate(adjust-color($base, $hue:180), 40); // pink
+$darken: darken($complement, 20); // darker pink
 
-//skills
-$dangerous:   100%;
-$proficient:   90%;
-$confident:    80%;
-$vcomfortable: 70%;
-$comfortable:  60%;
-$workinglevel: 50%;
-$morefamiliar: 40%;
-$familiar:     30%;
-$dabbled:      20%;
-$heardofit:    10%;
+// Skills
+$html:    80%;
+$css:     80%;
+$bs:      60%;
+$sass:    60%;
+$js:      80%;
+$jquery:  50%;
+$php:     30%;
+$ruby:    90%;
+$git:     70%;
+$python:  30%;
+$java:    30%;
+$vscode:  70%;
 
-$html:    $vcomfortable;
-$css:     $vcomfortable;
-$bs:      $workinglevel;
-$sass:    $comfortable;
-$js:      $vcomfortable;
-$jquery:  $workinglevel;
-$php:     $familiar;
-$ruby:    $proficient;
-$git:     $confident;
-$python:  $morefamiliar;
-$java:    $familiar;
-$vscode:  $comfortable;
+// Custom modules
+.skill-levels {
+  .skill-html:hover   { width: $html; }
+  .skill-css:hover    { width: $css; }
+  .skill-bs:hover     { width: $bs; }
+  .skill-sass:hover   { width: $sass; }
+  .skill-js:hover     { width: $js; }
+  .skill-jquery:hover { width: $jquery; }
+  .skill-php:hover    { width: $php; }
+  .skill-ruby:hover   { width: $ruby; }
+  .skill-git:hover    { width: $git; }
+  .skill-python:hover { width: $python; }
+  .skill-java:hover   { width: $java; }
+  .skill-vscode:hover { width: $vscode; }
+}
 
 /* ELEMENT STYLES */
 body {
   font-family: monospace;
   background-color: $bg;
   font-size: 1.125em;
-  p { line-height: 2em; }
+
+  nav {
+    justify-content: flex-end;
+    .nav { justify-content: flex-end; }
+  }
+
   h1 { font-family: monospace; }
+  h3 { font-size: 1.25em; }
+  p { line-height: 2em; }
   a {
     text-decoration: none;
     color: $base;
   }
   a:hover { color: $bg; }
+
   button {
     color: $base;
     background: $complement;
@@ -51,10 +64,7 @@ body {
     background: $base;
     color: $bg;
   }
-  .btn:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
+
   img {
     filter: grayscale(100%);
     opacity: 1;
@@ -65,150 +75,141 @@ body {
     transform: scale(1.05);
     opacity: 0.7;
   }
+
   i {
     color: $base;
     margin-left: 0.5rem;
   }
+
   button, input, optgroup, select, textarea { font-family: monospace; }
+  a.fa, p.fa { font-size: 2em; }
 }
 
 /* CUSTOM CLASSES */
 
+// flashing div to emulate console
 span.flash {
   color: #fff;
   width: 1rem;
   height: 1rem;
 }
 
-.background-black {
-  background: #000;
-  color: #000 !important;
-}
-
 .thumbnail {
   background-color: $complement;
 }
 
-#about-header { padding-top: 2.5rem; }
-
 #main-content {
   max-width: 80%;
   background-color: #fff;
-  div.row { padding: 1.5rem 3rem 2.5rem 3rem; }
-  div.skills div {
-    .skill:hover {
-      background-color: $complement;
-      color: #fff;
+
+  #contact, #about {
+    h1 {
+      line-height: 2rem;
+      padding: 0.5rem 0 1rem 0;
     }
-    .skill-html:hover   { width: $html; }
-    .skill-css:hover    { width: $css; }
-    .skill-bs:hover     { width: $bs; }
-    .skill-sass:hover   { width: $sass; }
-    .skill-js:hover     { width: $js; }
-    .skill-jquery:hover { width: $jquery; }
-    .skill-php:hover    { width: $php; }
-    .skill-ruby:hover   { width: $ruby; }
-    .skill-git:hover    { width: $git; }
-    .skill-python:hover { width: $python; }
-    .skill-java:hover   { width: $java; }
-    .skill-vscode:hover { width: $vscode; }
-    h3.skill {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
-      -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+
+    p {
+      margin: 1rem 0;;
+    }
+
+    background-color: #fff;
+    justify-content: space-between;
+  }
+
+  #about {
+    .about-text { margin-top: 3rem; }
+    #about-header { padding-top: 2.5rem; }
+  }
+
+  #portfolio {
+    background-color: #677077;
+    color: $bg;
+
+    div p {
+      margin: 1rem 0;
+    }
+
+    h1 {
+      line-height: 2rem;
+      padding: 0.5rem 0;
+    }
+  }
+
+  div.row { padding: 1.5rem 3rem 2.5rem 3rem; }
+
+  div.skills {
+    padding: 0;
+    font-family: monospace;
+    div {
+      @extend .skill-levels;
+
+      margin-bottom: 0.5rem;
+
+      .skill:hover {
+        background-color: $complement;
+        color: #fff;
+      }
+
+      h3.skill {
+        background: $bg;
+        padding: 0.5rem;
+        line-height: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+        -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+      }
     }
   }
 }
 
-nav {
-  justify-content: flex-end;
-  .nav { justify-content: flex-end; }
-}
-
-#about {
-  background-color: #fff;
-  justify-content: space-between;
-  .about-text { margin-top: 3rem; }
-}
-
-#portfolio {
-  background-color: #677077;
-  color: $bg;
-  div p { margin-top: 1rem; }
-}
-
-#contact {
-  background-color: #fff;
-  justify-content: space-between;
-}
-
-#contact, #about {
-  h1 { line-height: 2rem; }
-  p { margin-bottom: 2.5rem; }
-}
-
-#contact, #about {
-  h1 { padding: 2rem 0; }
-}
-
-#portfolio {
-  h1 { padding: 2rem 0 0 0; }
-}
-
 .footer-container {
   background: #677077;
+
   #about-section {
     max-width: 80%;
     margin: 0 auto;
     color: $bg;
     padding: 3rem;
+    p, h3 {
+      padding: 0.25rem;
+      margin: 0;
+    }
+  }
+
+  #footer {
+    background-color: black;
+    color: $bg;
+    p, h3 {
+      padding: 0.25rem;
+      margin: 0;
+    }
   }
 }
 
-#msg {
-  padding-bottom: 150px;
-}
+#contact-form {
+  div.form-group {
+    #msg {
+      padding-bottom: 150px;
+    }
 
-.submit {
-  background-color: $base;
-  color: #fff;
-  padding: 0.5rem;
-}
-
-.submit:hover {
-  background-color: $bg;
-  color: #fff;
-}
-
-#footer {
-  background-color: black;
-  color: $bg;
+    .submit {
+      background-color: $base;
+      color: #fff;
+      padding: 0.5rem;
+    }
+    .submit:hover {
+      background-color: $bg;
+      color: #fff;
+    }
+  }
 }
 
 .blue {
   color: $base;
   font-family: monospace;
-}
-
-a.fa,
-p.fa { font-size: 2em; }
-
-h3 { font-size: 1.25em; }
-
-#main-content div.skills {
-  padding: 0;
-  font-family: monospace;
-  div {
-    margin-bottom: 0.5rem;
-    h3 {
-      background: $bg;
-      padding: 0.5rem;
-      line-height: 2rem;
-    }
-  }
 }
 
 .profile {
@@ -218,10 +219,19 @@ h3 { font-size: 1.25em; }
   img.profile-pic { border: none; }
 }
 
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 /* BOOTSTRAP CLASSES  */
 .navbar {
   background: $complement;
   clear: both;
+  height: 70px;
+  justify-content: center;
+  padding: 0;
+  opacity: 0.9;
 }
 
 .nav-container {
@@ -248,6 +258,7 @@ h3 { font-size: 1.25em; }
       padding: 1.5rem 1rem;
     }
   }
+
   #about {
     justify-content: center;
     margin: 0;
@@ -256,31 +267,44 @@ h3 { font-size: 1.25em; }
       .skill-level-text { display: none; }
     }
   }
+
   div.profile {
     margin: 5rem 0 0 0;
     padding: 0;
   }
+
   hr { display: none; }
-  .skills { margin-top: 2rem; }
+
+  .skills {
+    margin-top: 2rem;
+  }
+
   .footer-container #about-section { max-width: 100%; }
 }
 
 @media (max-width: 767px) {
   #contact p { text-align: center; }
+
   div.navbar.fixed-top { padding: 0; }
+
   .sm-ctr {
     text-align: center;
     nav { justify-content: center; }
   }
+
   button.nav-item { padding: 2px; }
+
   .navbar h1 {
     font-size: 1.5em;
     margin-top: 1rem;
   }
+
   .skills div { font-size: 1.25rem; }
+
   #main-content.container {
     padding-left: 0;
     padding-right: 0;
+
     div.row {
       margin-bottom: 0;
       justify-content: space-around;
@@ -292,6 +316,7 @@ h3 { font-size: 1.25em; }
       }
     }
   }
+
   div#about.row {
     padding-left: 0;
     padding-right: 0;

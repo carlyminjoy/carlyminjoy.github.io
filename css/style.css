@@ -1,12 +1,43 @@
+.skill-levels .skill-html:hover, #main-content div.skills div .skill-html:hover {
+  width: 80%; }
+.skill-levels .skill-css:hover, #main-content div.skills div .skill-css:hover {
+  width: 80%; }
+.skill-levels .skill-bs:hover, #main-content div.skills div .skill-bs:hover {
+  width: 60%; }
+.skill-levels .skill-sass:hover, #main-content div.skills div .skill-sass:hover {
+  width: 60%; }
+.skill-levels .skill-js:hover, #main-content div.skills div .skill-js:hover {
+  width: 80%; }
+.skill-levels .skill-jquery:hover, #main-content div.skills div .skill-jquery:hover {
+  width: 50%; }
+.skill-levels .skill-php:hover, #main-content div.skills div .skill-php:hover {
+  width: 30%; }
+.skill-levels .skill-ruby:hover, #main-content div.skills div .skill-ruby:hover {
+  width: 90%; }
+.skill-levels .skill-git:hover, #main-content div.skills div .skill-git:hover {
+  width: 70%; }
+.skill-levels .skill-python:hover, #main-content div.skills div .skill-python:hover {
+  width: 30%; }
+.skill-levels .skill-java:hover, #main-content div.skills div .skill-java:hover {
+  width: 30%; }
+.skill-levels .skill-vscode:hover, #main-content div.skills div .skill-vscode:hover {
+  width: 70%; }
+
 /* ELEMENT STYLES */
 body {
   font-family: monospace;
   background-color: #e5e5e5;
   font-size: 1.125em; }
-  body p {
-    line-height: 2em; }
+  body nav {
+    justify-content: flex-end; }
+    body nav .nav {
+      justify-content: flex-end; }
   body h1 {
     font-family: monospace; }
+  body h3 {
+    font-size: 1.25em; }
+  body p {
+    line-height: 2em; }
   body a {
     text-decoration: none;
     color: #43e8b3; }
@@ -19,9 +50,6 @@ body {
   body button:hover {
     background: #43e8b3;
     color: #e5e5e5; }
-  body .btn:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
   body img {
     filter: grayscale(100%);
     opacity: 1;
@@ -35,6 +63,8 @@ body {
     margin-left: 0.5rem; }
   body button, body input, body optgroup, body select, body textarea {
     font-family: monospace; }
+  body a.fa, body p.fa {
+    font-size: 2em; }
 
 /* CUSTOM CLASSES */
 span.flash {
@@ -42,87 +72,52 @@ span.flash {
   width: 1rem;
   height: 1rem; }
 
-.background-black {
-  background: #000;
-  color: #000 !important; }
-
 .thumbnail {
   background-color: #ff2c70; }
-
-#about-header {
-  padding-top: 2.5rem; }
 
 #main-content {
   max-width: 80%;
   background-color: #fff; }
+  #main-content #contact, #main-content #about {
+    background-color: #fff;
+    justify-content: space-between; }
+    #main-content #contact h1, #main-content #about h1 {
+      line-height: 2rem;
+      padding: 0.5rem 0 1rem 0; }
+    #main-content #contact p, #main-content #about p {
+      margin: 1rem 0; }
+  #main-content #about .about-text {
+    margin-top: 3rem; }
+  #main-content #about #about-header {
+    padding-top: 2.5rem; }
+  #main-content #portfolio {
+    background-color: #677077;
+    color: #e5e5e5; }
+    #main-content #portfolio div p {
+      margin: 1rem 0; }
+    #main-content #portfolio h1 {
+      line-height: 2rem;
+      padding: 0.5rem 0; }
   #main-content div.row {
     padding: 1.5rem 3rem 2.5rem 3rem; }
-  #main-content div.skills div .skill:hover {
-    background-color: #ff2c70;
-    color: #fff; }
-  #main-content div.skills div .skill-html:hover {
-    width: 70%; }
-  #main-content div.skills div .skill-css:hover {
-    width: 70%; }
-  #main-content div.skills div .skill-bs:hover {
-    width: 50%; }
-  #main-content div.skills div .skill-sass:hover {
-    width: 60%; }
-  #main-content div.skills div .skill-js:hover {
-    width: 70%; }
-  #main-content div.skills div .skill-jquery:hover {
-    width: 50%; }
-  #main-content div.skills div .skill-php:hover {
-    width: 30%; }
-  #main-content div.skills div .skill-ruby:hover {
-    width: 90%; }
-  #main-content div.skills div .skill-git:hover {
-    width: 80%; }
-  #main-content div.skills div .skill-python:hover {
-    width: 40%; }
-  #main-content div.skills div .skill-java:hover {
-    width: 30%; }
-  #main-content div.skills div .skill-vscode:hover {
-    width: 60%; }
-  #main-content div.skills div h3.skill {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
-    -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
-
-nav {
-  justify-content: flex-end; }
-  nav .nav {
-    justify-content: flex-end; }
-
-#about {
-  background-color: #fff;
-  justify-content: space-between; }
-  #about .about-text {
-    margin-top: 3rem; }
-
-#portfolio {
-  background-color: #677077;
-  color: #e5e5e5; }
-  #portfolio div p {
-    margin-top: 1rem; }
-
-#contact {
-  background-color: #fff;
-  justify-content: space-between; }
-
-#contact h1, #about h1 {
-  line-height: 2rem; }
-#contact p, #about p {
-  margin-bottom: 2.5rem; }
-
-#contact h1, #about h1 {
-  padding: 2rem 0; }
-
-#portfolio h1 {
-  padding: 2rem 0 0 0; }
+  #main-content div.skills {
+    padding: 0;
+    font-family: monospace; }
+    #main-content div.skills div {
+      margin-bottom: 0.5rem; }
+      #main-content div.skills div .skill:hover {
+        background-color: #ff2c70;
+        color: #fff; }
+      #main-content div.skills div h3.skill {
+        background: #e5e5e5;
+        padding: 0.5rem;
+        line-height: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+        -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
 
 .footer-container {
   background: #677077; }
@@ -131,43 +126,29 @@ nav {
     margin: 0 auto;
     color: #e5e5e5;
     padding: 3rem; }
+    .footer-container #about-section p, .footer-container #about-section h3 {
+      padding: 0.25rem;
+      margin: 0; }
+  .footer-container #footer {
+    background-color: black;
+    color: #e5e5e5; }
+    .footer-container #footer p, .footer-container #footer h3 {
+      padding: 0.25rem;
+      margin: 0; }
 
-#msg {
+#contact-form div.form-group #msg {
   padding-bottom: 150px; }
-
-.submit {
+#contact-form div.form-group .submit {
   background-color: #43e8b3;
   color: #fff;
   padding: 0.5rem; }
-
-.submit:hover {
+#contact-form div.form-group .submit:hover {
   background-color: #e5e5e5;
   color: #fff; }
-
-#footer {
-  background-color: black;
-  color: #e5e5e5; }
 
 .blue {
   color: #43e8b3;
   font-family: monospace; }
-
-a.fa,
-p.fa {
-  font-size: 2em; }
-
-h3 {
-  font-size: 1.25em; }
-
-#main-content div.skills {
-  padding: 0;
-  font-family: monospace; }
-  #main-content div.skills div {
-    margin-bottom: 0.5rem; }
-    #main-content div.skills div h3 {
-      background: #e5e5e5;
-      padding: 0.5rem;
-      line-height: 2rem; }
 
 .profile {
   width: 400px;
@@ -176,10 +157,18 @@ h3 {
   .profile img.profile-pic {
     border: none; }
 
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 /* BOOTSTRAP CLASSES  */
 .navbar {
   background: #ff2c70;
-  clear: both; }
+  clear: both;
+  height: 70px;
+  justify-content: center;
+  padding: 0;
+  opacity: 0.9; }
 
 .nav-container {
   max-width: 1000px;
