@@ -58,23 +58,23 @@ span.flash {
     background-color: #ff2c70;
     color: #fff; }
   #main-content div.skills div .skill-html:hover {
-    width: 80%; }
-  #main-content div.skills div .skill-css:hover {
-    width: 80%; }
-  #main-content div.skills div .skill-bs:hover {
     width: 60%; }
+  #main-content div.skills div .skill-css:hover {
+    width: 70%; }
+  #main-content div.skills div .skill-bs:hover {
+    width: 50%; }
   #main-content div.skills div .skill-sass:hover {
     width: 60%; }
   #main-content div.skills div .skill-js:hover {
-    width: 80%; }
+    width: 60%; }
   #main-content div.skills div .skill-jquery:hover {
-    width: 40%; }
+    width: 50%; }
   #main-content div.skills div .skill-php:hover {
-    width: 30%; }
+    width: 20%; }
   #main-content div.skills div .skill-ruby:hover {
-    width: 80%; }
+    width: 90%; }
   #main-content div.skills div .skill-git:hover {
-    width: 80%; }
+    width: 60%; }
   #main-content div.skills div h3.skill {
     width: 100%;
     display: flex;
