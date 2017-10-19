@@ -234,6 +234,11 @@ span.flash {
   #main-content.container {
     padding-left: 0;
     padding-right: 0; }
+    #main-content.container div#about.row {
+      padding-left: 0;
+      padding-right: 0; }
+      #main-content.container div#about.row div.about-text {
+        margin-top: 0; }
     #main-content.container div.row {
       margin-bottom: 0;
       justify-content: space-around; }
@@ -241,13 +246,7 @@ span.flash {
         text-align: center;
         margin-top: 0;
         padding: 1.25rem 0;
-        line-height: 1.25rem; }
-
-  div#about.row {
-    padding-left: 0;
-    padding-right: 0; }
-    div#about.row div.about-text {
-      margin-top: 0; } }
+        line-height: 1.25rem; } }
 @media (max-width: 595px) {
   #about-section {
     padding: 2rem 0; }

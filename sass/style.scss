@@ -305,6 +305,12 @@ span.flash {
     padding-left: 0;
     padding-right: 0;
 
+    div#about.row {
+      padding-left: 0;
+      padding-right: 0;
+      div.about-text { margin-top: 0; }
+    }
+
     div.row {
       margin-bottom: 0;
       justify-content: space-around;
@@ -315,12 +321,6 @@ span.flash {
         line-height: 1.25rem;
       }
     }
-  }
-
-  div#about.row {
-    padding-left: 0;
-    padding-right: 0;
-    div.about-text { margin-top: 0; }
   }
 }
 
