@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     var flash = setInterval(function() {
-        console.log("hey");
         $("span.flash").toggleClass("background-black");
     }, 500);
 
