@@ -18,8 +18,8 @@
   width: 70%; }
 .skill-levels .skill-python:hover, #main-content div.skills div .skill-python:hover {
   width: 30%; }
-.skill-levels .skill-java:hover, #main-content div.skills div .skill-java:hover {
-  width: 30%; }
+.skill-levels .skill-wordpress:hover, #main-content div.skills div .skill-wordpress:hover {
+  width: 50%; }
 .skill-levels .skill-vscode:hover, #main-content div.skills div .skill-vscode:hover {
   width: 70%; }
 
@@ -38,6 +38,11 @@ body {
     font-size: 1.25em; }
   body p {
     line-height: 2em; }
+  body p.lead {
+    font-style: italic;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem; }
   body a {
     text-decoration: none;
     color: #43e8b3; }
