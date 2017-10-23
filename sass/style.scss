@@ -278,8 +278,14 @@ span.background-black {
     justify-content: center;
     margin: 0;
     padding: 0;
-    div div {
-      .skill-level-text { display: none; }
+    div {
+      div {
+        .skill-level-text { display: none; }
+      }
+      div.row.mb-5.skills {
+        margin-top: 2rem;
+        padding: 0;
+      }
     }
   }
 
@@ -289,10 +295,6 @@ span.background-black {
   }
 
   hr { display: none; }
-
-  .skills {
-    margin-top: 2rem;
-  }
 
   .footer-container #about-section { max-width: 100%; }
 }

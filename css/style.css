@@ -208,6 +208,9 @@ span.background-black {
     padding: 0; }
     #about div div .skill-level-text {
       display: none; }
+    #about div div.row.mb-5.skills {
+      margin-top: 2rem;
+      padding: 0; }
 
   div.profile {
     margin: 2rem auto 0 auto;
@@ -215,9 +218,6 @@ span.background-black {
 
   hr {
     display: none; }
-
-  .skills {
-    margin-top: 2rem; }
 
   .footer-container #about-section {
     max-width: 100%; } }
