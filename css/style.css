@@ -299,9 +299,9 @@ span.background-black {
         padding: 1.25rem 0;
         line-height: 1.25rem; } }
 @media (max-width: 595px) {
-  #about-section {
+  .footer-container #about-section {
     padding: 2rem 0; }
-    #about-section div {
+    .footer-container #about-section div {
       margin: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

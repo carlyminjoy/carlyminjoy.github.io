@@ -374,8 +374,10 @@ span.background-black {
 }
 
 @media (max-width: 595px) {
-  #about-section {
-    padding: 2rem 0;
-    div {  margin: 1rem; }
+  .footer-container {
+    #about-section {
+      padding: 2rem 0;
+      div {  margin: 1rem; }
+    }
   }
 }
