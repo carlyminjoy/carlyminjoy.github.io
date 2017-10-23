@@ -17,7 +17,7 @@
 .skill-levels .skill-git:hover, #main-content div.skills div .skill-git:hover {
   width: 70%; }
 .skill-levels .skill-python:hover, #main-content div.skills div .skill-python:hover {
-  width: 30%; }
+  width: 35%; }
 .skill-levels .skill-wordpress:hover, #main-content div.skills div .skill-wordpress:hover {
   width: 50%; }
 .skill-levels .skill-vscode:hover, #main-content div.skills div .skill-vscode:hover {
@@ -285,7 +285,7 @@ span.background-black {
     #main-content.container div.skills div .skill-git {
       width: 70%; }
     #main-content.container div.skills div .skill-python {
-      width: 30%; }
+      width: 35%; }
     #main-content.container div.skills div .skill-wordpress {
       width: 50%; }
     #main-content.container div.skills div .skill-vscode {
