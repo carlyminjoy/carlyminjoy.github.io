@@ -12,12 +12,9 @@ $bs:        60%;
 $sass:      60%;
 $js:        80%;
 $jquery:    50%;
-$php:       30%;
 $ruby:      90%;
 $git:       70%;
-$python:    35%;
 $wordpress: 50%;
-$vscode:    70%;
 
 // Custom modules
 .skill-levels {
@@ -27,12 +24,9 @@ $vscode:    70%;
   .skill-sass:hover       { width: $sass; }
   .skill-js:hover         { width: $js; }
   .skill-jquery:hover     { width: $jquery; }
-  .skill-php:hover        { width: $php; }
   .skill-ruby:hover       { width: $ruby; }
   .skill-git:hover        { width: $git; }
-  .skill-python:hover     { width: $python; }
   .skill-wordpress:hover  { width: $wordpress; }
-  .skill-vscode:hover     { width: $vscode; }
 }
 
 /* ELEMENT STYLES */
@@ -48,6 +42,7 @@ body {
 
   h1 { font-family: monospace; }
   h3 { font-size: 1.25em; }
+
   p { line-height: 2em; }
   p.lead {
     font-style: italic;
@@ -55,6 +50,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.25rem;
   }
+
   a {
     text-decoration: none;
     color: $base;
@@ -92,22 +88,6 @@ body {
 }
 
 /* CUSTOM CLASSES */
-
-// flashing div to emulate console
-span.flash {
-  color: #fff;
-  width: 1rem;
-  height: 1rem;
-}
-
-span.background-black {
-  background-color: #000;
-  color: #000;
-}
-
-.thumbnail {
-  background-color: $complement;
-}
 
 #main-content {
   max-width: 80%;
@@ -235,6 +215,22 @@ span.background-black {
   box-shadow: none;
 }
 
+// flashing div to emulate console
+span.flash {
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+}
+
+span.background-black {
+  background-color: #000;
+  color: #000;
+}
+
+.thumbnail {
+  background-color: $complement;
+}
+
 /* BOOTSTRAP CLASSES  */
 .navbar {
   background: $complement;
@@ -352,12 +348,9 @@ span.background-black {
       .skill-sass       { width: $sass; }
       .skill-js         { width: $js; }
       .skill-jquery     { width: $jquery; }
-      .skill-php        { width: $php; }
       .skill-ruby       { width: $ruby; }
       .skill-git        { width: $git; }
-      .skill-python     { width: $python; }
       .skill-wordpress  { width: $wordpress; }
-      .skill-vscode     { width: $vscode; }
     }
 
     div.row {

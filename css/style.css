@@ -10,18 +10,12 @@
   width: 80%; }
 .skill-levels .skill-jquery:hover, #main-content div.skills div .skill-jquery:hover {
   width: 50%; }
-.skill-levels .skill-php:hover, #main-content div.skills div .skill-php:hover {
-  width: 30%; }
 .skill-levels .skill-ruby:hover, #main-content div.skills div .skill-ruby:hover {
   width: 90%; }
 .skill-levels .skill-git:hover, #main-content div.skills div .skill-git:hover {
   width: 70%; }
-.skill-levels .skill-python:hover, #main-content div.skills div .skill-python:hover {
-  width: 35%; }
 .skill-levels .skill-wordpress:hover, #main-content div.skills div .skill-wordpress:hover {
   width: 50%; }
-.skill-levels .skill-vscode:hover, #main-content div.skills div .skill-vscode:hover {
-  width: 70%; }
 
 /* ELEMENT STYLES */
 body {
@@ -72,18 +66,6 @@ body {
     font-size: 2em; }
 
 /* CUSTOM CLASSES */
-span.flash {
-  color: #fff;
-  width: 1rem;
-  height: 1rem; }
-
-span.background-black {
-  background-color: #000;
-  color: #000; }
-
-.thumbnail {
-  background-color: #ff2c70; }
-
 #main-content {
   max-width: 80%;
   background-color: #fff; }
@@ -169,6 +151,18 @@ span.background-black {
 .btn:focus {
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+span.flash {
+  color: #fff;
+  width: 1rem;
+  height: 1rem; }
+
+span.background-black {
+  background-color: #000;
+  color: #000; }
+
+.thumbnail {
+  background-color: #ff2c70; }
 
 /* BOOTSTRAP CLASSES  */
 .navbar {
@@ -278,18 +272,12 @@ span.background-black {
       width: 80%; }
     #main-content.container div.skills div .skill-jquery {
       width: 50%; }
-    #main-content.container div.skills div .skill-php {
-      width: 30%; }
     #main-content.container div.skills div .skill-ruby {
       width: 90%; }
     #main-content.container div.skills div .skill-git {
       width: 70%; }
-    #main-content.container div.skills div .skill-python {
-      width: 35%; }
     #main-content.container div.skills div .skill-wordpress {
       width: 50%; }
-    #main-content.container div.skills div .skill-vscode {
-      width: 70%; }
     #main-content.container div.row {
       margin-bottom: 0;
       justify-content: space-around; }
