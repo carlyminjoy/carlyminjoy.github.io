@@ -1,9 +1,10 @@
 $(document).ready(function () {
-
+    // Set up flashing div in about section
     var flash = setInterval(function() {
         $("span.flash").toggleClass("background-black");
     }, 500);
 
+    // form submission with alertify
     $('#contact-form').submit(function(e) {
         e.preventDefault();
         $.ajax({
@@ -21,6 +22,7 @@ $(document).ready(function () {
         $(this).get(0).reset();
     });
 
+    // scrolling nav buttons
     $('.nav-btn').click(function(evt) {
         var navHeight = $(".navbar").height();
         evt.preventDefault();
