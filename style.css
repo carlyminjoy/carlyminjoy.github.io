@@ -34,7 +34,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin: 5%; }
+  margin: 5% 5% 1.5rem 5%; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font: Lato, sans-serif;
     margin: 0;
@@ -58,6 +58,17 @@ body {
     font-weight: 200; }
   body .align-right {
     text-align: right; }
+  body footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 12px;
+    color: #202630; }
+    body footer p {
+      background: #f2f2f2;
+      width: 75px;
+      padding: 0.5rem; }
 
 nav {
   padding: 0 !important; }
@@ -118,9 +129,20 @@ nav {
   border: 3px solid #202630; }
 
 #contact {
-  margin-top: 4rem; }
+  margin: 4rem auto; }
   #contact blockquote {
     margin: 0; }
+
+.contributions {
+  margin: 3rem auto 0 auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contributions div {
+    width: 100%;
+    max-width: 728px; }
 
 #skills {
   margin-top: 2rem; }
