@@ -134,6 +134,7 @@ nav {
       #skills .skill-sliders .skill:hover i {
         color: #f2f2f2; }
     #skills .skill-sliders p.skill {
+      color: #202630;
       font-weight: 800;
       font-size: 12px;
       background: lightgray;
@@ -145,6 +146,8 @@ nav {
       align-items: center;
       transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
       -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
+      #skills .skill-sliders p.skill i {
+        color: #202630; }
   #skills .skills {
     background: #202630;
     color: #f2f2f2;
@@ -172,8 +175,9 @@ nav {
 
 @media (max-width: 767px) {
   .skill-sliders p.skill {
-    background: #fc85b5;
-    color: #f2f2f2; }
+    color: #202630; }
+    .skill-sliders p.skill i {
+      color: #202630; }
   .skill-sliders .skill-html {
     width: 80% !important; }
   .skill-sliders .skill-css {
