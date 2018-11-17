@@ -81,7 +81,7 @@ body {
     background-repeat: no-repeat; 
     background-size: cover; 
     background-attachment: fixed;
-    margin: 5% 5% 1.5rem 5%;
+    margin: 5% 0 0 0;
     .font-light {
         font-weight: 200;
     }
@@ -89,15 +89,14 @@ body {
         text-align: right;
     }
     footer {
-        display:flex;
-        justify-content:center;
+        width:100%;
+        margin:0;
         p {
             background: $font-light;
-            width: 75px;
             padding: 0.5rem;
         }
         text-align: center;
-        font-weight:800;
+        font-weight: 200;
         font-size: 12px;
         color: $dark-blue;
     }
@@ -174,6 +173,11 @@ nav {
     }
 }
 
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
 #about {
     hr {
         border: 3px solid $dark-blue;
@@ -185,10 +189,14 @@ nav {
     blockquote {
         margin: 0;
     }
+    hr {
+        border: 3px solid $pink;
+        max-width: 100px;
+    }
 }
 
 .contributions {
-    margin-top: 3rem;
+    margin-top: 2rem;
     width:100%;
     text-align:center;
     display:flex;
