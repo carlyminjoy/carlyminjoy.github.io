@@ -1,0 +1,206 @@
+.skill-levels .skill-html:hover, #skills .skill-sliders .skill-html:hover {
+  width: 80%; }
+.skill-levels .skill-css:hover, #skills .skill-sliders .skill-css:hover {
+  width: 80%; }
+.skill-levels .skill-bs:hover, #skills .skill-sliders .skill-bs:hover {
+  width: 80%; }
+.skill-levels .skill-sass:hover, #skills .skill-sliders .skill-sass:hover {
+  width: 60%; }
+.skill-levels .skill-js:hover, #skills .skill-sliders .skill-js:hover {
+  width: 80%; }
+.skill-levels .skill-angular:hover, #skills .skill-sliders .skill-angular:hover {
+  width: 70%; }
+.skill-levels .skill-vue:hover, #skills .skill-sliders .skill-vue:hover {
+  width: 60%; }
+.skill-levels .skill-knockout:hover, #skills .skill-sliders .skill-knockout:hover {
+  width: 60%; }
+.skill-levels .skill-git:hover, #skills .skill-sliders .skill-git:hover {
+  width: 90%; }
+.skill-levels .skill-php:hover, #skills .skill-sliders .skill-php:hover {
+  width: 80%; }
+.skill-levels .skill-phpunit:hover, #skills .skill-sliders .skill-phpunit:hover {
+  width: 80%; }
+.skill-levels .skill-sql:hover, #skills .skill-sliders .skill-sql:hover {
+  width: 70%; }
+.skill-levels .skill-doctrine:hover, #skills .skill-sliders .skill-doctrine:hover {
+  width: 60%; }
+.skill-levels .skill-jquery:hover, #skills .skill-sliders .skill-jquery:hover {
+  width: 70%; }
+
+body {
+  font: Roboto, sans-serif;
+  background: url("flowers.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 5%; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font: Lato, sans-serif;
+    margin: 0;
+    letter-spacing: 5px; }
+  body .pink-text {
+    color: #fc85b5; }
+  body p {
+    margin: 0; }
+  body i {
+    color: #fc85b5;
+    transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+    -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
+  body blockquote {
+    border-left: 5px solid #fc85b5;
+    padding: 0 15px; }
+  body img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated; }
+  body .font-light {
+    font-weight: 200; }
+  body .align-right {
+    text-align: right; }
+
+nav {
+  padding: 0 !important; }
+  nav #nav-items {
+    justify-content: flex-end; }
+  nav .navbar-nav {
+    margin-right: 5rem;
+    margin-left: 5rem; }
+    nav .navbar-nav a.nav-item {
+      padding: 0.75rem 1.25rem !important; }
+    nav .navbar-nav a.nav-item.nav-link {
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #202630;
+      transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+      -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
+    nav .navbar-nav a.nav-item.nav-link:hover {
+      background: rgba(252, 133, 181, 0.9);
+      color: #f2f2f2; }
+
+.title {
+  margin: 10rem auto 5rem auto; }
+  .title ul.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0; }
+    .title ul.title-text li {
+      color: #f2f2f2;
+      background-color: rgba(32, 38, 48, 0.9);
+      padding: .25rem 0.75rem;
+      margin: 1rem; }
+      .title ul.title-text li h1, .title ul.title-text li h2, .title ul.title-text li h3, .title ul.title-text li h4, .title ul.title-text li h5 {
+        text-align: center; }
+  .title hr {
+    border: 3px solid #f2f2f2;
+    max-width: 100px; }
+
+.content {
+  border-radius: 10px;
+  padding: 3rem; }
+
+.content-light {
+  background: #f2f2f2; }
+
+.content-dark {
+  background: #202630;
+  color: #f2f2f2; }
+  .content-dark a {
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+    -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
+  .content-dark a:hover {
+    color: #fc85b5; }
+
+#about hr {
+  border: 3px solid #202630; }
+
+#contact {
+  margin-top: 4rem; }
+  #contact blockquote {
+    margin: 0; }
+
+#skills {
+  margin-top: 2rem; }
+  #skills div.about-text {
+    display: flex; }
+  #skills .skill-sliders {
+    margin-bottom: 0.5rem; }
+    #skills .skill-sliders .skill:hover {
+      background-color: #fc85b5;
+      color: #fff; }
+      #skills .skill-sliders .skill:hover i {
+        color: #f2f2f2; }
+    #skills .skill-sliders p.skill {
+      font-weight: 800;
+      font-size: 12px;
+      background: lightgray;
+      margin: 10px 0;
+      padding: 0.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+      -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
+  #skills .skills {
+    background: #202630;
+    color: #f2f2f2;
+    padding: 0.75rem;
+    text-align: center; }
+
+#projects {
+  margin-top: 4rem; }
+  #projects #project-items {
+    padding-top: 2rem; }
+    #projects #project-items a {
+      text-decoration: none; }
+    #projects #project-items .project {
+      background: #202630;
+      color: #f2f2f2;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+      -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease; }
+      #projects #project-items .project hr {
+        border-top-color: #f2f2f2; }
+    #projects #project-items .project:hover {
+      background: #fc85b5; }
+
+@media (max-width: 767px) {
+  .skill-sliders p.skill {
+    background: #fc85b5;
+    color: #f2f2f2; }
+  .skill-sliders .skill-html {
+    width: 80% !important; }
+  .skill-sliders .skill-css {
+    width: 80% !important; }
+  .skill-sliders .skill-bs {
+    width: 80% !important; }
+  .skill-sliders .skill-sass {
+    width: 60% !important; }
+  .skill-sliders .skill-js {
+    width: 80% !important; }
+  .skill-sliders .skill-angular {
+    width: 70% !important; }
+  .skill-sliders .skill-knockout {
+    width: 60% !important; }
+  .skill-sliders .skill-vue {
+    width: 60% !important; }
+  .skill-sliders .skill-git {
+    width: 90% !important; }
+  .skill-sliders .skill-php {
+    width: 80% !important; }
+  .skill-sliders .skill-phpunit {
+    width: 80% !important; }
+  .skill-sliders .skill-sql {
+    width: 70% !important; }
+  .skill-sliders .skill-doctrine {
+    width: 60% !important; }
+  .skill-sliders .skill-jquery {
+    width: 70% !important; } }
+
+/*# sourceMappingURL=style.css.map */

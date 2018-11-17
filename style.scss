@@ -1,0 +1,265 @@
+// COLORS
+$dark-blue: #202630;
+$dark-blue-op: rgba(32, 38, 48, 0.9);
+$pink: #fc85b5;
+$pink-op: rgba(252, 133, 181, 0.9);
+$light-blue: #85e5fc;
+$light-blue-op: rgba(123, 219, 232, 0.9);
+$font-light: #f2f2f2;
+$font-light-op: rgba(242, 242, 242, 0.9);
+
+// Skills
+$html:      80%;
+$css:       80%;
+$bs:        80%;
+$sass:      60%;
+$js:        80%;
+$angular:   70%;
+$vue:       60%;
+$knockout:  60%;
+$php:       80%;
+$doctrine:  60%;
+$git:       90%;
+$phpunit:   80%;
+$jquery:    70%;
+$sql:       70%;
+
+// Custom modules
+.skill-levels {
+  .skill-html:hover       { width: $html; }
+  .skill-css:hover        { width: $css; }
+  .skill-bs:hover         { width: $bs; }
+  .skill-sass:hover       { width: $sass; }
+  .skill-js:hover         { width: $js; }
+  .skill-angular:hover     { width: $angular; }
+  .skill-vue:hover       { width: $vue; }
+  .skill-knockout:hover       { width: $knockout; }
+  .skill-git:hover        { width: $git; }
+  .skill-php:hover  { width: $php; }
+  .skill-phpunit:hover  { width: $phpunit; }
+  .skill-sql:hover  { width: $sql; }
+  .skill-doctrine:hover  { width: $doctrine; }
+  .skill-jquery:hover  { width: $jquery; }
+}
+
+// FONT
+$font-headings: Lato, sans-serif;
+$font-base: Roboto, sans-serif;
+
+// IMAGES
+$background-image: 'flowers.jpg';
+
+body {
+    font: $font-base;
+    h1, h2, h3, h4, h5, h6 {
+        font: $font-headings;
+        margin: 0;
+        letter-spacing: 5px;
+    }
+    .pink-text {
+        color: $pink;
+    }
+    p {
+        margin: 0;
+    }
+    i {
+        color: $pink;
+        transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+        -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+    }
+    blockquote {
+        border-left: 5px solid $pink;
+        padding: 0 15px;
+    }
+    img {
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+    }
+    background: url($background-image);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    margin: 5%;
+    .font-light {
+        font-weight: 200;
+    }
+    .align-right {
+        text-align: right;
+    }
+}
+
+
+nav {
+    padding: 0!important;
+    #nav-items {
+        justify-content: flex-end;
+    }
+    .navbar-nav {
+        margin-right: 5rem;
+        margin-left: 5rem;
+        a.nav-item {
+            padding: 0.75rem 1.25rem!important;
+        }
+        a.nav-item.nav-link {
+            text-decoration: none;
+            letter-spacing: 2px;
+            color: $dark-blue;
+            transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+            -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+        }
+        a.nav-item.nav-link:hover {
+            background: $pink-op;
+            color: $font-light;
+        }
+    }
+}
+
+.title {
+    margin: 10rem auto 5rem auto;
+    ul.title-text {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        li {
+            color: $font-light;
+            background-color: $dark-blue-op;
+            padding: .25rem 0.75rem;
+            margin: 1rem;
+            h1, h2, h3, h4, h5 {
+                text-align: center;
+            }
+        }
+    }
+    hr {
+        border: 3px solid $font-light;
+        max-width: 100px;
+    }
+}
+
+.content {
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.content-light {
+    background: $font-light;
+}
+
+.content-dark {
+    background: $dark-blue;
+    color: $font-light;
+    a {
+        color: $font-light;
+        text-decoration: none;
+        transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+        -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+    }
+    a:hover {
+        color: $pink;
+    }
+}
+
+#about {
+    hr {
+        border: 3px solid $dark-blue;
+    }
+}
+
+#contact {
+    margin-top: 4rem;
+    blockquote {
+        margin: 0;
+    }
+}
+
+#skills {
+    margin-top: 2rem;
+    div.about-text {
+        display:flex;
+        
+    }
+    .skill-sliders {
+        @extend .skill-levels;
+    
+        margin-bottom: 0.5rem;
+    
+        .skill:hover {
+            background-color: $pink;
+            color: #fff;
+            i {
+                color: $font-light;
+            }
+        }
+    
+        p.skill {
+            font-weight: 800;
+            font-size: 12px;
+            background: lightgray;
+            margin: 10px 0;
+            padding: 0.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+            -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+        }
+    }
+    .skills {
+        background: $dark-blue;
+        color: $font-light;
+        padding: 0.75rem;
+        text-align:center;
+    }
+}
+
+#projects {
+    margin-top: 4rem;
+    #project-items {
+        padding-top: 2rem;
+        a {
+            text-decoration:none;
+        }
+        .project {
+            background: $dark-blue;
+            color: $font-light;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+            -webkit-transition: background-color 0.5s ease, color 0.5s ease, width 1s ease;
+            hr {
+                border-top-color: $font-light;
+            }
+        }
+        .project:hover {
+            background: $pink;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .skill-sliders {
+        p.skill {
+          background: $pink;
+          color: $font-light;
+        }
+        .skill-html      { width: $html!important; }
+        .skill-css       { width: $css!important; }
+        .skill-bs        { width: $bs!important; }
+        .skill-sass      { width: $sass!important; }
+        .skill-js        { width: $js!important; }
+        .skill-angular    { width: $angular!important; }
+        .skill-knockout    { width: $knockout!important; }
+        .skill-vue      { width: $vue!important; }
+        .skill-git       { width: $git!important; }
+        .skill-php { width: $php!important; }
+        .skill-phpunit { width: $phpunit!important; }
+        .skill-sql { width: $sql!important; }
+        .skill-doctrine { width: $doctrine!important; }
+        .skill-jquery { width: $jquery!important; }
+    }
+}

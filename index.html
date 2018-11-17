@@ -1,319 +1,159 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Carly Minjoy on GitHub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='css/alertify.min.css'>
-  <link rel='stylesheet' href='css/default.min.css'>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Carly Minjoy: Portfolio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar fixed-top navbar-expand-sm bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-items" aria-controls="nav-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="nav-items" class="collapse navbar-collapse">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#about">about</a>
+                        <a class="nav-item nav-link" href="#projects">projects</a>
+                        <a class="nav-item nav-link" href="#contact">contact</a>
+                    </div>
+                </div>
+            </nav>
 
-<body>
+            <div class="container title">
+                <ul class='title-text'>
+                    <li>
+                        <h1>HELLO</h1>
+                    </li>
+                    <li>
+                        <h1>I'M <span class="pink-text">CARLY</span></h1>
+                    </li>
+                    <li>
+                        <h5 class='font-light'>FULL-STACK WEB DEVELOPER</h5>
+                    </li>
+                </ul>
+            </div>
 
-  <div class="navbar fixed-top">
-    <div class="container nav-container">
-      <div class="row">
-        <div class="col-md-6 sm-ctr name-heading">
-          <h1 class="blue">carly_minjoy</h1>
+            <div id="about" class="container content content-light">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>ABOUT</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote>
+                            Determined. Open-minded. Adaptable.<br>
+                            Enjoys building clean, elegant, user-friendly web applications.
+                        </blockquote>
+                    </div>
+                </div>
+                <div id="skills" class="row">
+                    <div class="col-lg-4">
+                        <div class="skills">
+                            <h5>FRAMEWORKS</h5>
+                        </div>
+                        <div class="skill-sliders">
+                            <p class="skill skill-angular">Angular <i class="devicon-angularjs-plain"></i></p>
+                            <p class="skill skill-jquery">jQuery <i class="devicon-jquery-plain"></i></p>
+                            <p class="skill skill-vue">Vue <i class="devicon-vuejs-plain"></i></p>
+                            <p class="skill skill-knockout">Knockout <i class="devicon-javascript-plain"></i></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="skills">
+                            <h5>TOOLS</h5>
+                        </div>
+                        <div class="skill-sliders">
+                            <p class="skill skill-git">Git <i class="devicon-git-plain"></i></p>
+                            <p class="skill skill-phpunit">PHPUnit <i class="devicon-php-plain"></i></p>
+                            <p class="skill skill-doctrine">Doctrine <i class="devicon-php-plain"></i></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="skills">
+                            <h5>LANGUAGES</h5>
+                        </div>
+                        <div class="skill-sliders">
+                            <p class="skill skill-html">HTML <i class="devicon-html5-plain"></i></p>
+                            <p class="skill skill-css">CSS <i class="devicon-css3-plain"></i></p>
+                            <p class="skill skill-js">JS <i class="devicon-javascript-plain"></i></p>
+                            <p class="skill skill-php">PHP <i class="devicon-php-plain"></i></p>
+                            <p class="skill skill-sql">SQL <i class="devicon-mysql-plain"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects" class="container content content-light">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>PROJECTS</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote>
+                            A collection of front-end projects.<br>
+                            Built with: &nbsp;
+                            <i class='devicon-html5-plain'></i>&nbsp;
+                            <i class='devicon-css3-plain'></i>&nbsp;
+                            <i class='devicon-bootstrap-plain'></i>&nbsp;
+                            <i class='devicon-sass-plain'></i>&nbsp;
+                            <i class='devicon-javascript-plain'></i>&nbsp;
+                            <i class='devicon-jquery-plain'></i>&nbsp;
+                        </blockquote>
+                    </div>
+                </div>
+                <div id="project-items" class="row">
+                    <div class="col-lg-4">
+                        <a href="https://carlyminjoy.github.io/frontend_projects/weather_app" target="_blank">
+                            <div class="project">           
+                                <h5>WEATHER APP</h5>
+                                <hr>
+                                <p>Hits a weather API to retrieve current weather conditions for a user's location.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="https://carlyminjoy.github.io/frontend_projects/weather_app" target="_blank">
+                            <div class="project">           
+                                <h5>WIKI VIEWER</h5>
+                                <hr>
+                                <p>Queries Wikipedia to return the top results for a given search, or returns results for a random topic.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="https://carlyminjoy.github.io/frontend_projects/weather_app" target="_blank">
+                            <div class="project">           
+                                <h5>POMODORO</h5>
+                                <hr>
+                                <p>Starts a timer for a specified amount of time and rings a bell upon completion.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="container content content-dark">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>CONTACT</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote>
+                            Email: <a href="mailto:carlylminjoy@gmail.com" class="email">carlylminjoy@gmail.com</a><br>
+                            Socials: &nbsp;<a href="https://twitter.com/minjoyful" target="_blank" class="fa fa-twitter blue"></a>&nbsp;
+                            <a href="https://github.com/carlyminjoy" target="_blank" class="fa fa-github blue"></a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-6 sm-ctr">
-          <nav class="nav">
-            <a href="#about-header" class="nav-btn"><button class="btn nav-item p-3">about</button></a>
-            <a href="#portfolio" class="nav-btn"><button class="btn nav-item p-3">portfolio</button></a>
-            <a href="#contact" class="nav-btn"><button class="btn nav-item p-3">contact</button></a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container" id="main-content">
-
-    <div class="row align-items-center" id="about">
-      <div class="col-lg-5 profile">
-        <img class="img-fluid profile-pic" src="img/profile.png">
-      </div>
-      <div id="about-header" class="col-lg-7 about-text">
-        <h1>&lt;&#47;about&gt;</h1>
-        <div>
-          <p>Carly is a Computer Science student at the University of New England &amp;
-          aspiring full-stack developer. Studying web development through
-          <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>,
-          <a href="https://http://100daysofcode.com/" target="_blank">100DaysOfCode</a>
-          (read my log <a href="https://github.com/carlyminjoy/100-days-of-code/blob/master/log.md" target="_blank">here</a>)
-          and <a href="https://www.launchschool.com" target="_blank">Launch School</a>.</p>
-          <p>$ open-minded <br>$ curious<br>$ learning enthusiast<span class="flash">I</span></p>
-        </div>
-      </div>
-
-      <div class="col-lg-12">
-        <hr class="mt-5 mb-5">
-        <div class="row mb-5 skills">
-          <div class="col-md-4">
-            <h3 class="skill skill-ruby">Ruby <i class="devicon-ruby-plain"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-html">HTML <i class="devicon-html5-plain"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-css">CSS <i class="devicon-css3-plain"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-js">JavaScript <i class="devicon-javascript-plain"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-git">Git <i class="devicon-git-plain"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-bs">Bootstrap <i class="devicon-bootstrap-plain"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-sass">Sass <i class="devicon-sass-original"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-wordpress">WordPress <i class="devicon-wordpress-plain"></i></h3>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="skill skill-jquery">jQuery <i class="devicon-jquery-plain"></i></h3>
-          </div>
-
-          <p class='col-12 text-center mt-3 mb-0 skill-level-text'>(Hover over each skill to see skill level)</p>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="portfolio">
-      <div class="col-12 text-center">
-        <h1 class="pt-4">&lt;portfolio&gt;</h1>
-        <p class="lead mb-5">Front-end projects</p>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="https://carlyminjoy.github.io/frontend_projects/pomodoro" target="_blank">
-            <img src="img/pomodoro.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">Pomodoro Clock</p>
-        <p>
-          <i class='devicon-html5-plain'></i>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-bootstrap-plain'></i>
-          <i class='devicon-sass-plain'></i>
-          <i class='devicon-javascript-plain'></i>
-          <i class='devicon-jquery-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="https://carlyminjoy.github.io/frontend_projects/weather_app" target="_blank">
-            <img src="img/weatherapp.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">Weather App</p>
-        <p>
-          <i class='devicon-html5-plain'></i>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-bootstrap-plain'></i>
-          <i class='devicon-javascript-plain'></i>
-          <i class='devicon-jquery-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="https://carlyminjoy.github.io/frontend_projects/twitch_stream" target="_blank">
-            <img src="img/twitchstreamer.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">Twitch Streamer</p>
-        <p>
-          <i class='devicon-html5-plain'></i>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-javascript-plain'></i>
-          <i class='devicon-jquery-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="https://carlyminjoy.github.io/frontend_projects/random_quote_generator" target="_blank">
-            <img src="img/quotemachine.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">Random Quote Machine</p>
-        <p>
-          <i class='devicon-html5-plain'></i>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-javascript-plain'></i>
-          <i class='devicon-jquery-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="https://carlyminjoy.github.io/frontend_projects/calculator" target="_blank">
-            <img src="img/calculator.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">JavaScript Calculator</p>
-        <p>
-          <i class='devicon-html5-plain'></i>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-sass-plain'></i>
-          <i class='devicon-javascript-plain'></i>
-          <i class='devicon-jquery-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="https://carlyminjoy.github.io/frontend_projects/wikipedia_viewer" target="_blank">
-            <img src="img/wikiviewer.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">Wiki Viewer</p>
-        <p>
-          <i class='devicon-html5-plain'></i>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-bootstrap-plain'></i>
-          <i class='devicon-javascript-plain'></i>
-          <i class='devicon-jquery-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-12 text-center">
-        <p class="lead mb-5">Wordpress sites</p>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="http://www.tllcollective.com.au" target="_blank">
-            <img src="img/tllcollective.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">The Love Letter (e-commerce)</p>
-        <p>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-wordpress-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="http://www.theinspirationbox.com.au" target="_blank">
-            <img src="img/theinspirationbox.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">The Inspiration Box (e-commerce)</p>
-        <p>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-wordpress-plain'></i>
-        </p>
-        <br>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <div class="thumbnail">
-          <a href="https://timetofly.net.au" target="_blank">
-            <img src="img/timetofly.png" class="img-fluid">
-          </a>
-        </div>
-        <p class="img-caption">Time to Fly (website)</p>
-        <p>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-wordpress-plain'></i>
-        </p>
-        <br>
-      </div>
-
-    </div>
-
-    <div class="row" id="contact">
-      <div class="col-12 text-center">
-        <h1 class="pt-4">&lt;&#47;contact&gt;</h1>
-      </div>
-
-      <div class="col-md-6">
-        <form id="contact-form" action="https://formspree.io/carlylminjoy@gmail.com"
-         method="post">
-          <div class="form-group">
-            <input type="text" class="form-control inputName" placeholder="Name" name="name">
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control inputEmail" placeholder="Email" name="_replyto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control inputMessage" placeholder="Message" id="msg" name="message">
-          </div>
-          <div class="form-group mt-5">
-            <input type="text" name="_gotcha" style="display:none">
-            <input type="submit" class="submit" value="submit">
-          </div>
-        </form>
-      </div>
-      <div class="col-md-5 mt-3 contact-text">
-        <p>Send me a message and we can have a chat about projects, experience or anything you like. </p>
-        <p>If you're based in Brisbane, we can have a chat over a coffee. </p>
-        <div class="text-center"><p class="fa fa-coffee blue"</p></div>
-        <p class="mt-3">Hit submit and I will endeavour to get back to you ASAP. </p>
-    </div>
-    </div>
-  </div>
-
-  <div class="container-fluid footer-container">
-    <div class="row align-items-top" id="about-section">
-      <div class="col-sm-6 text-center">
-        <h3 class="">About this page</h3>
-        <p>Created and <span class='blue'>&lt;&#47;coded&gt;</span> by Carly Minjoy</p>
-        <p>
-          <i class='devicon-html5-plain'></i>
-          <i class='devicon-css3-plain'></i>
-          <i class='devicon-bootstrap-plain'></i>
-          <i class='devicon-sass-plain'></i>
-          <i class='devicon-javascript-plain'></i>
-          <i class='devicon-jquery-plain'></i>
-          <i class='devicon-github-plain'></i>
-        </p>
-      </div>
-
-      <div class="col-sm-6 text-center">
-        <h3 class="">Find me elsewhere</h3>
-        <a href="https://twitter.com/minjoyful" target="_blank" class="fa fa-twitter blue"></a>
-        <a href="https://github.com/carlyminjoy" target="_blank" class="fa fa-github blue"></a>
-      </div>
-    </div>
-
-    <div class="row justify-content-center p-3" id="footer">
-      <p class="small mb-0">carly minjoy &copy; 2017</p>
-    </div>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src='https://use.fontawesome.com/bb50291ebe.js'></script>
-  <script src='js/alertify.min.js'></script>
-  <script src='js/script.js'></script>
-
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src='https://use.fontawesome.com/bb50291ebe.js'></script>
+        <script src="script.js"></script>
+    </body>
 </html>
