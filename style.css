@@ -134,7 +134,7 @@ nav {
     margin: 0; }
 
 .contributions {
-  margin: 3rem auto 0 auto;
+  margin-top: 3rem;
   width: 100%;
   text-align: center;
   display: flex;
