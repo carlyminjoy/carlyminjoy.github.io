@@ -206,6 +206,9 @@ nav {
   .contributions {
     display: none; }
 
+  .contributions-text {
+    display: none; }
+
   .skill-sliders p.skill {
     color: #202630; }
     .skill-sliders p.skill i {
