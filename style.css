@@ -204,6 +204,9 @@ nav {
       background: #fc85b5; }
 
 @media (max-width: 767px) {
+  .contributions {
+    display: none; }
+
   .skill-sliders p.skill {
     color: #202630; }
     .skill-sliders p.skill i {

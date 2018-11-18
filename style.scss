@@ -278,6 +278,9 @@ nav {
 }
 
 @media (max-width: 767px) {
+    .contributions {
+        display: none;
+    }
     .skill-sliders {
         p.skill {
           color: $dark-blue;
