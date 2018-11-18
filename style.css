@@ -70,7 +70,8 @@ body {
       padding: 0.5rem; }
 
 nav {
-  padding: 0 !important; }
+  padding: 0 !important;
+  justify-content: flex-end; }
   nav #nav-items {
     justify-content: flex-end; }
   nav .navbar-nav {
@@ -142,6 +143,7 @@ nav {
 .contributions {
   margin-top: 2rem;
   width: 100%;
+  max-width: 728px;
   text-align: center;
   display: flex;
   flex-direction: column;
