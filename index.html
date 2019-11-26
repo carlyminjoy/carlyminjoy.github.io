@@ -26,28 +26,31 @@
             </nav>
 
             <div class="container title">
-                <ul class='title-text'>
-                    <li>
-                        <h1>HELLO</h1>
-                    </li>
-                    <li>
-                        <h1>I'M <span class="pink-text">CARLY</span></h1>
-                    </li>
-                    <li>
-                        <h5 class='font-light'>FULL-STACK WEB DEVELOPER</h5>
-                    </li>
-                </ul>
+                <div class='title-text'>
+                    <h1>Hi.</h2>
+                    <h5>I'm Carly, and I like making web applications.</h5>
+                    <svg width="1200" height="1200" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(300,300)">
+                            <path class='blob'
+                                d="M155.4,-154.8C202.4,-108.4,242.2,-54.2,239.7,-2.5C237.3,49.3,192.5,98.5,145.5,134.9C98.5,171.2,49.3,194.6,4.4,190.2C-40.5,185.9,-81.1,153.7,-118.4,117.4C-155.7,81.1,-189.9,40.5,-187.5,2.4C-185.2,-35.8,-146.3,-71.7,-109,-118C-71.7,-164.3,-35.8,-221.2,9.2,-230.4C54.2,-239.5,108.4,-201.1,155.4,-154.8Z"
+                                fill="rgba(252, 133, 181, 1)" />
+                        </g>
+                    </svg>
+                </div>
+                <div class='avatar'>
+                    <div class='avatar-img'></div>
+                </div>
             </div>
 
-            <div id="about" class="container content content-light">
+            <div id="about" class="container content content-light shadow">
                 <div class="row">
                     <div class="col-md-4">
                         <h2>ABOUT</h2>
                     </div>
                     <div class="col-md-8">
                         <blockquote>
-                            Develops web applications for Orange Sky.<br>
-                            Determined, open-minded and keen to learn.
+                            Likes JavaScript, loves Vue.<br>
+                            Enjoys a challenge.
                         </blockquote>
                     </div>
                 </div>
@@ -57,10 +60,14 @@
                             <h5>FRAMEWORKS</h5>
                         </div>
                         <div class="skill-sliders">
-                            <p class="skill skill-angular">Angular <i class="devicon-angularjs-plain"></i></p>
-                            <p class="skill skill-jquery">jQuery <i class="devicon-jquery-plain"></i></p>
-                            <p class="skill skill-vue">Vue <i class="devicon-vuejs-plain"></i></p>
-                            <p class="skill skill-knockout">Knockout <i class="devicon-javascript-plain"></i></p>
+                            <p class="skill skill-vue">
+                                <span class='float'>
+                                    <i class="devicon-vuejs-plain"></i>
+                                    Vue
+                                </span>
+                            </p>
+                            <p class="skill skill-nuxt"><span class='float'><i class="devicon-vuejs-plain"></i>Nuxt</span></p>
+                            <p class="skill skill-express"><span class='float'><i class="devicon-nodejs-plain"></i>Express</span></p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -68,9 +75,11 @@
                             <h5>TOOLS</h5>
                         </div>
                         <div class="skill-sliders">
-                            <p class="skill skill-git">Git <i class="devicon-git-plain"></i></p>
-                            <p class="skill skill-phpunit">PHPUnit <i class="devicon-php-plain"></i></p>
-                            <p class="skill skill-doctrine">Doctrine <i class="devicon-php-plain"></i></p>
+                            <p class="skill skill-git"><span class='float'><i class="devicon-git-plain"></i>Git</span></p>
+                            <p class="skill skill-parcel"><span class='float'><i class="fa fa-code"></i>Parcel</span></p>
+                            <p class="skill skill-insomnia"><span class='float'><i class="fa fa-code"></i>Insomnia</span></p>
+                            <p class="skill skill-xd"><span class='float'><i class="fa fa-paint-brush"></i>XD</span></p>
+                            <p class="skill skill-vscode"><span class='float'><i class="devicon-visualstudio-plain"></i>VSCode</span></p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -78,17 +87,18 @@
                             <h5>LANGUAGES</h5>
                         </div>
                         <div class="skill-sliders">
-                            <p class="skill skill-html">HTML <i class="devicon-html5-plain"></i></p>
-                            <p class="skill skill-css">CSS <i class="devicon-css3-plain"></i></p>
-                            <p class="skill skill-js">JS <i class="devicon-javascript-plain"></i></p>
-                            <p class="skill skill-php">PHP <i class="devicon-php-plain"></i></p>
-                            <p class="skill skill-sql">SQL <i class="devicon-mysql-plain"></i></p>
+                            <p class="skill skill-html"><span class='float'><i class="devicon-html5-plain"></i>HTML</span></p>
+                            <p class="skill skill-css"><span class='float'><i class="devicon-css3-plain"></i>CSS</span></p>
+                            <p class="skill skill-js"><span class='float'><i class="devicon-javascript-plain"></i>JavaScript</span></p>
+                            <p class="skill skill-node"><span class='float'><i class="devicon-nodejs-plain"></i>Node</span></p>
+                            <p class="skill skill-php"><span class='float'><i class="devicon-php-plain"></i>PHP</span></p>
+                            <p class="skill skill-sql"><span class='float'><i class="devicon-mysql-plain"></i>SQL</span></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="projects" class="container content content-light">
+            <div id="projects" class="container content content-light shadow">
                 <div class="row">
                     <div class="col-md-4">
                         <h2>PROJECTS</h2>
@@ -97,19 +107,49 @@
                         <blockquote>
                             A collection of front-end projects built for fun.<br>
                             Made with: &nbsp;
-                            <i class='devicon-html5-plain'></i>&nbsp;
-                            <i class='devicon-css3-plain'></i>&nbsp;
-                            <i class='devicon-bootstrap-plain'></i>&nbsp;
-                            <i class='devicon-sass-plain'></i>&nbsp;
-                            <i class='devicon-javascript-plain'></i>&nbsp;
-                            <i class='devicon-jquery-plain'></i>&nbsp;
+                            <i class='devicon-html5-plain'></i>
+                            <i class='devicon-css3-plain'></i>
+                            <i class='devicon-bootstrap-plain'></i>
+                            <i class='devicon-sass-plain'></i>
+                            <i class='devicon-javascript-plain'></i>
+                            <i class='devicon-vuejs-plain'></i>
+                            <i class='devicon-python-plain'></i>
                         </blockquote>
                     </div>
                 </div>
                 <div id="project-items" class="row">
                     <div class="col-lg-4">
+                        <a href="https://myduolingo.herokuapp.com" target="_blank">
+                            <div class="project shadow">           
+                                <h5>DUOLINGO APP</h5>
+                                <hr>
+                                <p>Hooks into unofficial Duolingo API to retrieve list of user words and display translations.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="https://beatthaglock.herokuapp.com" target="_blank">
+                            <div class="project shadow">           
+                                <h5>BEAT THA GLOCK</h5>
+                                <hr>
+                                <p>Simon-says-like glockenspiel game with chat.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="https://github.com/carlyminjoy/dontbeahermit" target="_blank">
+                            <div class="project shadow">           
+                                <h5>DON'T BE A HERMIT</h5>
+                                <hr>
+                                <p>Phone app to encourage users to get out of the house.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="project-items" class="row">
+                    <div class="col-lg-4">
                         <a href="https://carlyminjoy.github.io/frontend_projects/weather_app" target="_blank">
-                            <div class="project">           
+                            <div class="project shadow">
                                 <h5>WEATHER APP</h5>
                                 <hr>
                                 <p>Hits a weather API to retrieve current weather conditions for a user's location.</p>
@@ -117,17 +157,18 @@
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <a href="https://carlyminjoy.github.io/frontend_projects/weather_app" target="_blank">
-                            <div class="project">           
+                        <a href="https://carlyminjoy.github.io/frontend_projects/wikipedia_viewer" target="_blank">
+                            <div class="project shadow">
                                 <h5>WIKI VIEWER</h5>
                                 <hr>
-                                <p>Queries Wikipedia to return the top results for a given search, or returns results for a random topic.</p>
+                                <p>Queries Wikipedia to return the top results for a given search, or returns results for a random
+                                    topic.</p>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <a href="https://carlyminjoy.github.io/frontend_projects/weather_app" target="_blank">
-                            <div class="project">           
+                        <a href="https://carlyminjoy.github.io/frontend_projects/pomodoro" target="_blank">
+                            <div class="project shadow">
                                 <h5>POMODORO</h5>
                                 <hr>
                                 <p>Starts a timer for a specified amount of time and rings a bell upon completion.</p>
@@ -137,35 +178,21 @@
                 </div>
             </div>
 
-            <div id="contact" class="container content content-dark">
+            <div id="contact" class="container content content-light shadow">
                 <div class="text-center">
                     <h2>CONTACT</h2>
                     <hr>
                     <p class="text-center">
-                        <a href="mailto:carlylminjoy@gmail.com" class="email">carlylminjoy@gmail.com</a><br>
-                        <a href="https://twitter.com/minjoyful" target="_blank" class="fa fa-twitter blue"></a>&nbsp;
-                        <a href="https://github.com/carlyminjoy" target="_blank" class="fa fa-github blue"></a>
+                        <a href="mailto:carlylminjoy@gmail.com" class="email">carlylminjoy@gmail.com</a><br><br>
+                        <a href="https://twitter.com/minjoyful" target="_blank" class="fa fa-2x fa-twitter blue"></a>&nbsp;
+                        <a href="https://github.com/carlyminjoy" target="_blank" class="fa fa-2x fa-github blue"></a>
                     </p>
-                </div><br>
+                </div>
 
-                <div class="text-center">
-                    <p>Best contact times are weeknights/weekends.</p>
-                    <p class="contributions-text">As you can see, I'm pretty busy coding during the week ;)</p>
-                    <p class="contributions-text">(shameless brag below)</p>
-                </div>
-        
-                <div class="container">
-                    <div class="contributions">
-                        <div>
-                            <a href="http://github.com/carlyminjoy" class="gh-contributions" data-gh-username="carlyminjoy" target="_blank"></a>
-                            <script src="https://ikuwow.github.io/yourcontributions/widget.min.js"></script>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
-            <footer class="text-center"><p>A late night project by Carly &copy; 2018</p></footer>
+            <footer class="text-center"><p>A late night project by Carly &copy; 2019</p></footer>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
