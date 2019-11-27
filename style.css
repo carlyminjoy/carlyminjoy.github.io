@@ -114,22 +114,14 @@ nav {
   .title div.avatar {
     align-self: flex-end;
     display: block;
-    max-width: 800px;
-    flex-basis: 600px;
-    max-width: calc(100vw - 20px);
-    margin: 0 0 0px auto; }
-    .title div.avatar div.avatar-img {
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: url("./avatar.png");
+    flex-basis: 30%;
+    margin: 0 0 -3px auto; }
+    .title div.avatar .avatar-img {
       width: 100%;
-      min-height: 200px;
-      max-height: 500px; }
+      height: auto; }
   .title div.title-text {
     display: flex;
-    flex-basis: 500px;
-    min-width: 300px;
+    flex-basis: 70%;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 0; }
@@ -310,6 +302,9 @@ nav {
 
   .contributions-text {
     display: none; }
+
+  .title .title-text h5 {
+    font-size: 16px; }
 
   .skill-sliders p.skill {
     color: #f2f2f2 !important; }
