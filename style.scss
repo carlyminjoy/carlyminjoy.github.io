@@ -142,8 +142,9 @@ body {
   footer {
     width: 100%;
     margin: 0;
+    background: #97BDC5;
     p {
-      background: $font-light;
+      background: #97BDC5;
       padding: 0.5rem;
     }
     text-align: center;
@@ -156,8 +157,26 @@ body {
 nav {
   padding: 0 !important;
   justify-content: flex-end;
+  background-color: #97BDC5;
+  transition: 0.5s ease;
+
+  span.navbar-toggler-icon {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+  }
+
+    &.transparent {
+        background-color: transparent;
+        transition: 0.5s ease;
+
+        .navbar-nav a.nav-item.nav-link {
+            color: $font-light;
+        }
+    }
+
   #nav-items {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   .navbar-nav {
     margin-right: 5rem;
@@ -416,6 +435,16 @@ nav {
 }
 
 @media (max-width: 767px) {
+    nav#nav {
+        background: $font-light!important;
+        .navbar-nav {
+            padding-bottom: 15px;
+            a.nav-item.nav-link {
+                color: $dark-blue;
+                text-align:center;
+            }
+        }
+    }
   .contributions {
     display: none;
   }
