@@ -18,6 +18,12 @@
     width: 70%; }
   .skill-levels p.skill:hover.skill-js::before, #skills .skill-sliders p.skill:hover.skill-js::before {
     width: 80%; }
+  .skill-levels p.skill:hover.skill-jq::before, #skills .skill-sliders p.skill:hover.skill-jq::before {
+    width: 60%; }
+  .skill-levels p.skill:hover.skill-angular::before, #skills .skill-sliders p.skill:hover.skill-angular::before {
+    width: 20%; }
+  .skill-levels p.skill:hover.skill-react::before, #skills .skill-sliders p.skill:hover.skill-react::before {
+    width: 20%; }
   .skill-levels p.skill:hover.skill-nuxt::before, #skills .skill-sliders p.skill:hover.skill-nuxt::before {
     width: 70%; }
   .skill-levels p.skill:hover.skill-node::before, #skills .skill-sliders p.skill:hover.skill-node::before {
@@ -347,6 +353,8 @@ nav {
     .skill-sliders p.skill.skill-xd::before {
       width: 70% !important; }
     .skill-sliders p.skill.skill-js::before {
+      width: 80% !important; }
+    .skill-sliders p.skill.skill-jq::before {
       width: 80% !important; }
     .skill-sliders p.skill.skill-nuxt::before {
       width: 70% !important; }

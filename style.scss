@@ -15,6 +15,9 @@ $html: 80%;
 $css: 80%;
 $sass: 80%;
 $js: 80%;
+$jq: 60%;
+$angular: 20%;
+$react: 20%;
 $nuxt: 70%;
 $vue: 80%;
 $node: 60%;
@@ -57,6 +60,15 @@ $vscode: 70%;
     }
     &.skill-js::before {
       width: $js;
+    }
+    &.skill-jq::before {
+        width: $jq;
+    }
+    &.skill-angular::before {
+        width: $angular;
+    }
+    &.skill-react::before {
+        width: $react;
     }
     &.skill-nuxt::before {
       width: $nuxt;
@@ -485,6 +497,9 @@ nav {
         width: $xd !important;
       }
       &.skill-js::before {
+        width: $js !important;
+      }
+      &.skill-jq::before {
         width: $js !important;
       }
       &.skill-nuxt::before {
