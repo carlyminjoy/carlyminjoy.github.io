@@ -14,8 +14,6 @@ document.addEventListener('scroll', function(e) {
 links.forEach(function(link) {
     let linkId = link + '-link';
     let linkEl = document.getElementById(linkId);
-
-    console.log('linkel', linkEl)
     
     linkEl.addEventListener('click', function(e) {
         e.preventDefault();
@@ -25,4 +23,18 @@ links.forEach(function(link) {
             behavior: 'smooth' 
         });
     })
+})
+
+// Modals for project screenshots
+let fundraisingLink = document.getElementById('fundraisingProject');
+let conversationalLink = document.getElementById('conversationalProject');
+
+fundraisingLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    $('#fundraisingModal').modal({});
+})
+
+conversationalLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    $('#conversationalModal').modal({});
 })

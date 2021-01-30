@@ -20,15 +20,16 @@ $angular: 20%;
 $react: 20%;
 $nuxt: 70%;
 $vue: 80%;
-$node: 60%;
-$express: 40%;
-$php: 50%;
+$node: 20%;
+$express: 20%;
+$php: 30%;
 $git: 90%;
-$sql: 50%;
-$parcel: 70%;
+$sql: 20%;
+$parcel: 50%;
 $insomnia: 70%;
-$xd: 70%;
-$vscode: 70%;
+$xd: 50%;
+$figma: 30%;
+$vscode: 80%;
 
 // Custom modules
 .skill-levels {
@@ -57,6 +58,9 @@ $vscode: 70%;
     }
     &.skill-xd::before {
       width: $xd;
+    }
+    &.skill-figma::before {
+      width: $figma;
     }
     &.skill-js::before {
       width: $js;
@@ -495,6 +499,9 @@ nav {
       }
       &.skill-xd::before {
         width: $xd !important;
+      }
+      &.skill-xd::before {
+        width: $figma !important;
       }
       &.skill-js::before {
         width: $js !important;
